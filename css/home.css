@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*
+====================================================
+                    HERO
+==================================================== */
+
+.container {
+
+    & .hero {
+        position: relative;
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 1.2s ease;
+        
+        &.blur {
+            filter: blur(10px);
+        }
+
+
+        & .hero_bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 119%;
+            object-fit: cover;
+            object-position: 39%;
+            z-index: 0;
+            transform: scale(1.2);
+
+        }
+
+        & .hero_title {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            height: 65%;
+            width: 70%;
+            z-index: 2;
+            text-align: left;
+            color: white;
+            line-height: 1.1;
+            
+            & span {
+                font-size: 2rem;
+                font-family: var(--fontSecondary);
+                font-weight: 300;
+            }
+
+            & h1 {
+                font-size: 4rem;
+                letter-spacing: 1px;
+                font-family: var(--fontPrimary);
+                font-weight: 700;
+
+            }
+            & .btn_hero_explorer {
+                display: flex;
+                justify-content: center;
+                font-family: var(--fontSecondary);
+                width: clamp(120px, 50%, 220px);
+                text-align: center;
+                border-radius: 15px;
+                border: 1px solid var(--lightColor);
+                background-color: transparent;
+                color: var(--lightColor);
+                padding: 0.3rem 0.5rem;
+                cursor: pointer;
+                margin-top: 1rem;
+
+                &:hover {
+                    background-color: var(--outlinerColor);
+                    border: none;
+                    box-shadow: 0.5px 0.5px 15px var(--outlinerColor);
+                }
+            }
+        }
+    }
+/* ===== Hero Responsive ============================== */
+/*  nao houve necessidade de medias */
+/* ===================================================== */
+
+
+/*
+====================================================
+                    Section HUB
+==================================================== */
+
+    .hub {
+        display: flex;
+        flex-direction: column;
+        
+        & .hub_item {
+            font-family: var(--fontSecondary);
+            letter-spacing: 0.3rem;
+            overflow: hidden;
+            position: relative;
+            min-height: 50vh;
+            width: 100%;
+            
+
+            & .hub_img_photo {
+                height: 100%;
+                width: 102%;
+                position: absolute;
+                inset: 0;
+                object-fit: cover;
+                object-position: left top;
+                transform: scale(1.45);
+                transition: transform 0.3s ease;
+
+            }
+            & .hub_img_dev {
+            height: 100%;
+            width: 110%;
+            transform: scale(1);
+            object-fit: cover;
+            object-position: 42%;
+            opacity: 0.4;
+            }
+
+            & .hub_content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                z-index: 2;
+
+            
+                & .hub_subtitle {
+                    margin-top: 0.4rem;
+                    font-weight: 500;
+    
+                }
+                & .btn_hub_explorer {
+                    padding: 1rem;
+                    margin-top: 2.5rem;
+                    background-color: transparent;
+                    width: 50%;
+                    font-family: var(--fontSecondary);
+                    font-size: 1.4rem;
+                    font-weight: lighter;
+                    
+                    
+                    &.photo {
+                        color: black;
+                        font-weight: 500;
+                        border: 1px solid black;
+                    }
+                    &.dev {
+                        color: var(--lightColor);
+                        font-weight: 500;
+                        border: 1px solid var(--lightColor);
+                    }
+                }
+            }
+            &.photo {
+                color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            &.dev {
+                color: white;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            
+        }
+    }
+
+
+/*
+====================================================
+                    RESPONSIVE HUB
+==================================================== */
+    @media (min-width: 768px) {
+
+        .hub {
+            height: auto; /* ⬅️ libera o container */
+        }
+
+        .hub_item {
+            height: 100vh; /* ⬅️ cada um ocupa a tela inteira */
+        }
+
+    }
+
+    @media (min-width: 1024px) {
+
+        .hub {
+            height: auto; /* ⬅️ libera o container */
+        }
+
+        .hub_item {
+            height: 100vh; /* ⬅️ cada um ocupa a tela inteira */
+        }
+
+    }
+
+
+
+/*  ==================================================== */
+
+}

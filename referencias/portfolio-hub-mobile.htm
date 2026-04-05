@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- saved from url=(1575)https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c456bcd0f17829c85a8d8c0c2143c8b1/25b03645-ab85-4dd9-b535-1f0a7102ce09/9297603b.html?AWSAccessKeyId=ASIA2F3EMEYE3LEKMLEP&Signature=JmjXYD0ajyk4TPbTBZiRKB8ZnTU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDRbhCvFsjo%2B5hikH43euzsNa%2Bvek1O8bZPnWUIKlJGDAIgU30z8tO2sTfsLWudl0C54ksq%2BQdymCWlf0JC1tyF6dAq8wQIXxABGgw2OTk3NTMzMDk3MDUiDN%2FPDcNVy8pIiDnnpCrQBJ8d8CPIFG9io9UcKeDGLhnHMwoem2tICdgEgQ7oZpPYB%2FOWD2iV%2BAN%2BEMSUoviBeGLK4jjBywha78vPDqv5RM%2B7zQby4rITyr7K5QDE76DajX7MQWG1JkoDnFdgri5209pJ1E3de%2F8RkngW1bf%2BPXsKOshKSiWkjpwHERHxCX%2FnxFLX%2BIQ1Co8qRk0%2BkthPreo7qQxrXRIdRICB0yfZVr1uzxOQAtwiVRnVBTOoZT%2FSf9QtO2Tc%2FXTAfEZ3WMcJwKqyRTOv%2B56OmecJpHz6y%2FAbaq9N7IO8Nh9UhvrMRnE3xQceBoZ14W460B4ULO8IWXJdlJIK3HK%2Fo01PraCmshYd6zh%2BHDQNQcn8%2FCcDIfi0y6%2Fg5hD0WeauDJhNjmbIwT1a2oVQIDvlJVYYK4MhKFXw%2FZWC0r%2B6v1v3OtkXrlW7VKgQv6vUCqk3dEJYX2s8XhsHW1hzjqUl23XzHqiPxjw4D%2FxaoJyGUGGRznZVxeas8YUVZgAEtsB%2FS30A0MrDxQVkHNWtoRxqEmTfNLpb6ILlNjWE8Bxp7FPxiU3sLpsdemElQy%2BZFEd%2BWp8zm6gaYXdpTVpoLchWQb9g3lX8AYYnGwgM%2BSAb8Tl9bfGliX8WjTTCJR%2FAzOvBirhhhUBIGGA76H9%2FlYqatuMBmfSgKFYwsIXObnul8ikdyZGlnvN7BG6ZpBGV5KdG9BYXYnhTnQm5mg665TjvqGw8I4Rp4wtFiWzIiUyhF5LtiwtVokKYN8VQ3d3ettuk%2FLFFAVhMU5fuTfM5YTKXnqd2a6j18mYw5K62zgY6mAGZU3gSvx9Yx708eHcyy7%2Bvnsy%2BFYvzCfifgtsnDL4W4R0eFO%2FoVn57BRm9za3P743DpLR93JrwYPp51%2B6HydXWeXOY6r08zLswPcu54OOiOR6sAi7o0G%2Bn1OF8glswZof%2BVYKrHhS44gTlJG9nFRLUPmEB2GDaEAUggTLeF3OOt0ZzSNHm6hAYtBsJiNsMh7OwzaevhTeLrg%3D%3D&Expires=1775084855#dev -->
+<html lang="pt-BR" data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio-hub-mobile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./portfolio-hub-mobile_files/css2" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #111311;
+      --surface: rgba(255,255,255,.06);
+      --surface-2: rgba(255,255,255,.1);
+      --border: rgba(255,255,255,.12);
+      --text: #f5f3ee;
+      --muted: rgba(245,243,238,.72);
+      --accent: #5aa4ff;
+      --accent-2: #7bb8ff;
+      --radius: 26px;
+      --shadow: 0 16px 40px rgba(0,0,0,.28);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: linear-gradient(180deg, #0c0f0d 0%, #121613 100%); color: var(--text); font-family: 'Inter', sans-serif; }
+    body { min-height: 100vh; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .page {
+      width: min(100%, 440px);
+      margin: 0 auto;
+      padding: 18px 14px 44px;
+    }
+    .phone {
+      overflow: hidden;
+      border-radius: 32px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background:
+        linear-gradient(180deg, rgba(10,10,10,.26) 0%, rgba(10,10,10,.10) 34%, rgba(8,10,12,.72) 72%, rgba(8,10,12,.96) 100%),
+        url('https://pplx-res.cloudinary.com/image/upload/pplx_search_images/49ce0a084dc21f469190511de0eaf29f5e8cb416.jpg') center/cover no-repeat;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.7rem;
+      letter-spacing: -.03em;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      color: var(--muted);
+      font-size: .78rem;
+      backdrop-filter: blur(8px);
+    }
+    .hero-copy { padding-top: 40px; }
+    .eyebrow {
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.72);
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2.8rem, 8vw, 4rem);
+      line-height: .9;
+      letter-spacing: -.05em;
+      max-width: 8ch;
+    }
+    .lead {
+      margin: 16px 0 0;
+      max-width: 28ch;
+      color: rgba(255,255,255,.8);
+      font-size: .98rem;
+      line-height: 1.55;
+    }
+    .hub {
+      margin-top: 22px;
+      display: grid;
+      gap: 12px;
+    }
+    .card {
+      position: relative;
+      min-height: 180px;
+      padding: 18px;
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      display: flex;
+      align-items: end;
+      isolation: isolate;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(180deg, rgba(10,10,10,.08) 0%, rgba(10,10,10,.24) 40%, rgba(7,9,11,.88) 100%);
+    }
+    .card.photo {
+      background: url('https://pplx-res.cloudinary.com/image/upload/pplx_search_images/49ce0a084dc21f469190511de0eaf29f5e8cb416.jpg') center/cover no-repeat;
+    }
+    .card.dev {
+      background:
+        linear-gradient(160deg, rgba(19,31,39,.95), rgba(13,17,23,.95)),
+        url('https://pplx-res.cloudinary.com/image/upload/pplx_search_images/28343ed97e085f5edd672ef1fabe556956b965a6.jpg') center/cover no-repeat;
+      background-blend-mode: screen, normal;
+    }
+    .card-content { width: 100%; }
+    .label {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-size: .74rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.72);
+    }
+    .title {
+      display: block;
+      font-family: 'Instrument Serif', serif;
+      font-size: 2rem;
+      line-height: .95;
+      letter-spacing: -.04em;
+      margin-bottom: 8px;
+    }
+    .meta {
+      color: rgba(255,255,255,.76);
+      font-size: .95rem;
+      margin-bottom: 14px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--accent-2), var(--accent));
+      color: white;
+      font-size: .92rem;
+      font-weight: 600;
+      box-shadow: 0 8px 22px rgba(90,164,255,.34);
+    }
+    .section {
+      padding: 18px;
+      background: rgba(255,255,255,.03);
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: .9rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.62);
+      font-weight: 600;
+    }
+    .layout-grid {
+      display: grid;
+      gap: 12px;
+    }
+    .layout-item {
+      padding: 16px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 20px;
+    }
+    .layout-item strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: .98rem;
+    }
+    .mini {
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      padding: 10px;
+      display: grid;
+      gap: 8px;
+    }
+    .bar, .block, .tiny {
+      border-radius: 10px;
+      background: rgba(255,255,255,.08);
+    }
+    .bar { height: 10px; width: 56%; }
+    .tiny { height: 8px; width: 34%; }
+    .block { height: 68px; }
+    .split2 { display: grid; gap: 8px; }
+    .asym { display: grid; grid-template-columns: 1.4fr .8fr; gap: 8px; }
+    .asym .block:last-child { height: auto; }
+    .toggle {
+      display: grid;
+      gap: 8px;
+    }
+    .toggle-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    .toggle-top span, .footer-note {
+      background: rgba(255,255,255,.08);
+      border-radius: 999px;
+      padding: 8px 10px;
+      font-size: .72rem;
+      text-align: center;
+      color: rgba(255,255,255,.72);
+    }
+    .footer-note {
+      margin-top: 14px;
+      text-align: left;
+      border-radius: 14px;
+      line-height: 1.45;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .linkbox {
+      padding: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      min-height: 90px;
+    }
+    .linkbox span { display: block; color: rgba(255,255,255,.64); font-size: .78rem; margin-top: 4px; }
+    @media (min-width: 760px) {
+      .page { width: min(100%, 920px); padding: 28px; }
+      .hero { min-height: 880px; }
+      .hub { grid-template-columns: 1.1fr .9fr; }
+      .card { min-height: 240px; }
+      .section { padding: 24px; }
+      .layout-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="phone">
+      <section class="hero">
+        <div class="topbar">
+          <div class="brand">Paulo Fischer</div>
+          <div class="chip">Photography + Dev</div>
+        </div>
+
+        <div class="hero-copy">
+          <div class="eyebrow">Creative Hub</div>
+          <h1>Choose your world.</h1>
+          <p class="lead">Uma entrada híbrida para separar seu universo visual de fotografia e sua área de desenvolvimento com uma leitura clara no mobile.</p>
+        </div>
+
+        <div>
+          <div class="hub">
+            <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c456bcd0f17829c85a8d8c0c2143c8b1/25b03645-ab85-4dd9-b535-1f0a7102ce09/9297603b.html?AWSAccessKeyId=ASIA2F3EMEYE3LEKMLEP&amp;Signature=JmjXYD0ajyk4TPbTBZiRKB8ZnTU%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEJf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDRbhCvFsjo%2B5hikH43euzsNa%2Bvek1O8bZPnWUIKlJGDAIgU30z8tO2sTfsLWudl0C54ksq%2BQdymCWlf0JC1tyF6dAq8wQIXxABGgw2OTk3NTMzMDk3MDUiDN%2FPDcNVy8pIiDnnpCrQBJ8d8CPIFG9io9UcKeDGLhnHMwoem2tICdgEgQ7oZpPYB%2FOWD2iV%2BAN%2BEMSUoviBeGLK4jjBywha78vPDqv5RM%2B7zQby4rITyr7K5QDE76DajX7MQWG1JkoDnFdgri5209pJ1E3de%2F8RkngW1bf%2BPXsKOshKSiWkjpwHERHxCX%2FnxFLX%2BIQ1Co8qRk0%2BkthPreo7qQxrXRIdRICB0yfZVr1uzxOQAtwiVRnVBTOoZT%2FSf9QtO2Tc%2FXTAfEZ3WMcJwKqyRTOv%2B56OmecJpHz6y%2FAbaq9N7IO8Nh9UhvrMRnE3xQceBoZ14W460B4ULO8IWXJdlJIK3HK%2Fo01PraCmshYd6zh%2BHDQNQcn8%2FCcDIfi0y6%2Fg5hD0WeauDJhNjmbIwT1a2oVQIDvlJVYYK4MhKFXw%2FZWC0r%2B6v1v3OtkXrlW7VKgQv6vUCqk3dEJYX2s8XhsHW1hzjqUl23XzHqiPxjw4D%2FxaoJyGUGGRznZVxeas8YUVZgAEtsB%2FS30A0MrDxQVkHNWtoRxqEmTfNLpb6ILlNjWE8Bxp7FPxiU3sLpsdemElQy%2BZFEd%2BWp8zm6gaYXdpTVpoLchWQb9g3lX8AYYnGwgM%2BSAb8Tl9bfGliX8WjTTCJR%2FAzOvBirhhhUBIGGA76H9%2FlYqatuMBmfSgKFYwsIXObnul8ikdyZGlnvN7BG6ZpBGV5KdG9BYXYnhTnQm5mg665TjvqGw8I4Rp4wtFiWzIiUyhF5LtiwtVokKYN8VQ3d3ettuk%2FLFFAVhMU5fuTfM5YTKXnqd2a6j18mYw5K62zgY6mAGZU3gSvx9Yx708eHcyy7%2Bvnsy%2BFYvzCfifgtsnDL4W4R0eFO%2FoVn57BRm9za3P743DpLR93JrwYPp51%2B6HydXWeXOY6r08zLswPcu54OOiOR6sAi7o0G%2Bn1OF8glswZof%2BVYKrHhS44gTlJG9nFRLUPmEB2GDaEAUggTLeF3OOt0ZzSNHm6hAYtBsJiNsMh7OwzaevhTeLrg%3D%3D&amp;Expires=1775084855#photography" class="card photo">
+              <div class="card-content">
+                <span class="label">Photography</span>
+                <span class="title">Nature / Macro</span>
+                <div class="meta">Detalhe, textura e observação.</div>
+                <span class="cta">Explore</span>
+              </div>
+            </a>
+
+            <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c456bcd0f17829c85a8d8c0c2143c8b1/25b03645-ab85-4dd9-b535-1f0a7102ce09/9297603b.html?AWSAccessKeyId=ASIA2F3EMEYE3LEKMLEP&amp;Signature=JmjXYD0ajyk4TPbTBZiRKB8ZnTU%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEJf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDRbhCvFsjo%2B5hikH43euzsNa%2Bvek1O8bZPnWUIKlJGDAIgU30z8tO2sTfsLWudl0C54ksq%2BQdymCWlf0JC1tyF6dAq8wQIXxABGgw2OTk3NTMzMDk3MDUiDN%2FPDcNVy8pIiDnnpCrQBJ8d8CPIFG9io9UcKeDGLhnHMwoem2tICdgEgQ7oZpPYB%2FOWD2iV%2BAN%2BEMSUoviBeGLK4jjBywha78vPDqv5RM%2B7zQby4rITyr7K5QDE76DajX7MQWG1JkoDnFdgri5209pJ1E3de%2F8RkngW1bf%2BPXsKOshKSiWkjpwHERHxCX%2FnxFLX%2BIQ1Co8qRk0%2BkthPreo7qQxrXRIdRICB0yfZVr1uzxOQAtwiVRnVBTOoZT%2FSf9QtO2Tc%2FXTAfEZ3WMcJwKqyRTOv%2B56OmecJpHz6y%2FAbaq9N7IO8Nh9UhvrMRnE3xQceBoZ14W460B4ULO8IWXJdlJIK3HK%2Fo01PraCmshYd6zh%2BHDQNQcn8%2FCcDIfi0y6%2Fg5hD0WeauDJhNjmbIwT1a2oVQIDvlJVYYK4MhKFXw%2FZWC0r%2B6v1v3OtkXrlW7VKgQv6vUCqk3dEJYX2s8XhsHW1hzjqUl23XzHqiPxjw4D%2FxaoJyGUGGRznZVxeas8YUVZgAEtsB%2FS30A0MrDxQVkHNWtoRxqEmTfNLpb6ILlNjWE8Bxp7FPxiU3sLpsdemElQy%2BZFEd%2BWp8zm6gaYXdpTVpoLchWQb9g3lX8AYYnGwgM%2BSAb8Tl9bfGliX8WjTTCJR%2FAzOvBirhhhUBIGGA76H9%2FlYqatuMBmfSgKFYwsIXObnul8ikdyZGlnvN7BG6ZpBGV5KdG9BYXYnhTnQm5mg665TjvqGw8I4Rp4wtFiWzIiUyhF5LtiwtVokKYN8VQ3d3ettuk%2FLFFAVhMU5fuTfM5YTKXnqd2a6j18mYw5K62zgY6mAGZU3gSvx9Yx708eHcyy7%2Bvnsy%2BFYvzCfifgtsnDL4W4R0eFO%2FoVn57BRm9za3P743DpLR93JrwYPp51%2B6HydXWeXOY6r08zLswPcu54OOiOR6sAi7o0G%2Bn1OF8glswZof%2BVYKrHhS44gTlJG9nFRLUPmEB2GDaEAUggTLeF3OOt0ZzSNHm6hAYtBsJiNsMh7OwzaevhTeLrg%3D%3D&amp;Expires=1775084855#dev" class="card dev">
+              <div class="card-content">
+                <span class="label">Dev</span>
+                <span class="title">Web / UI</span>
+                <div class="meta">Interfaces com clareza e intenção.</div>
+                <span class="cta">Explore</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="links">
+            <div class="linkbox"><strong>Sobre</strong><span>Assinatura pessoal antes dos nichos</span></div>
+            <div class="linkbox"><strong>Contato</strong><span>Leads para foto e freelas web</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Variações de layout</h2>
+        <div class="layout-grid">
+          <div class="layout-item">
+            <strong>1 — Split vertical</strong>
+            <div class="mini split2">
+              <div class="block"></div>
+              <div class="block"></div>
+            </div>
+          </div>
+          <div class="layout-item">
+            <strong>2 — Hero + duas portas</strong>
+            <div class="mini">
+              <div class="tiny"></div>
+              <div class="bar"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+            </div>
+          </div>
+          <div class="layout-item">
+            <strong>3 — Cards assimétricos</strong>
+            <div class="mini asym">
+              <div class="block"></div>
+              <div class="block"></div>
+            </div>
+          </div>
+          <div class="layout-item">
+            <strong>4 — Toggle</strong>
+            <div class="mini toggle">
+              <div class="toggle-top"><span>Photography</span><span>Dev</span></div>
+              <div class="block"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-note">Direção sugerida: usar o <strong>Hero + duas portas</strong> como solução principal e guardar os demais como alternativas de navegação para testes A/B ou para a versão desktop.</div>
+      </section>
+    </div>
+  </main>
+
+
+</body></html>
