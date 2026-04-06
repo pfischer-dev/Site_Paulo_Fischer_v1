@@ -1,11 +1,12 @@
 /* Main */
 header {
-    background: transparent;
+    display: none;
 }
 /* Pagina em manutenção */
 
 .hero {
     position: relative;
+    z-index: 0;
     font-size: 2rem;
     height: 100vh;
     display: flex;
@@ -14,24 +15,28 @@ header {
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    
 
     
 
     .bg {
         position: absolute;
         inset: 0;
+        z-index: 0;
+        pointer-events: none;
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: 20% 56%;
         transform-origin: 90% 99%;
         transform: scale(1.5);
-        filter: brightness(0.);
+        
         
         
     }
     .content {
         position: relative;
+        z-index: 2;
         h1 {
             font-family: var(--fontSecondary);
             font-size: 2.8rem;
@@ -39,7 +44,7 @@ header {
             margin-bottom: 1rem;
             color: white;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.636);
-    
+            
         }
         p {
             color: var(--lightColor);
@@ -48,24 +53,21 @@ header {
             margin-bottom: 2rem;
             color: #ffffff;
             line-height: 1.5;
+            position: static;
 
         }
         .btn {
-            
             padding: 10px 20px;
             border: 1px solid var(--lightColor);
             text-decoration: none; 
             color: var(--lightColor);
+            cursor: pointer;
+            
             
         }
     }
-    &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.15);
-    }
     
+   
 }
 /*
 ====================================================
