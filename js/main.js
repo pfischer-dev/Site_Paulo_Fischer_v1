@@ -31,6 +31,7 @@ menu.addEventListener('click', () => {
     nav.classList.toggle('active'); /* add a classe active em nav_bar */
     menu.innerHTML = nav.classList.contains('active') ? 'X' : '☰'; /* confirmo se nav tem a classe active, se tiver troca o texto para X */
     blur.classList.toggle('blur'); /* tranforma o fundo e o hero_title em blur */
+    document.body.classList.add('menu_open');
 });
 
 /* 
