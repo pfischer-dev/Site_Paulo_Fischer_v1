@@ -24,7 +24,7 @@ body {
     
 }
 
-  
+
 /*
 ====================================================
                     Header 
@@ -124,7 +124,7 @@ header.hidden {
 /* NAO PRECISA */
 
 /* Desktop */
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1280px) {
     header .nav_bar {
         display: flex;
         align-items: center;
@@ -138,7 +138,7 @@ header.hidden {
 }
 
 /* Telas Grandes */
-@media (min-width: 1280px) {
+@media (min-width: 1279px) {
     header .nav_bar {
         display: flex;
         align-items: center;

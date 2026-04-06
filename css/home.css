@@ -111,12 +111,16 @@ body {
             & .hub_img_photo {
                 height: 100%;
                 width: 102%;
+                
                 position: absolute;
                 inset: 0;
-                object-fit: cover;
-                object-position: left top;
-                transform: scale(1.45);
+                background-image: url(../assets/img/hub_photo3.jpg);
+                background-size: cover;
+                transform-origin: top;
+                background-position: left 32%;
+                transform: scale(1.55);
                 transition: transform 0.3s ease;
+                
 
             }
             & .hub_img_dev {
@@ -192,28 +196,18 @@ body {
 ====================================================
                     RESPONSIVE HUB
 ==================================================== */
-    @media (min-width: 768px) {
 
-        .hub {
-            height: auto; /* ⬅️ libera o container */
+    @media (min-width: 678px){
+        .hub_item.photo, .hub_item.dev {
+            aspect-ratio: 16/9;
+            height: 100vh;
         }
-
-        .hub_item {
-            height: 100vh; /* ⬅️ cada um ocupa a tela inteira */
+        
+        .hub_img_photo, .hub_img_dev {
+            aspect-ratio: auto;
+            background-size: cover;
+            background-position: bottom 10%;
         }
-
-    }
-
-    @media (min-width: 1024px) {
-
-        .hub {
-            height: auto; /* ⬅️ libera o container */
-        }
-
-        .hub_item {
-            height: 100vh; /* ⬅️ cada um ocupa a tela inteira */
-        }
-
     }
 
 
