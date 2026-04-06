@@ -2,6 +2,7 @@
     /* Cores */
     --lightColor: #ffffff;
     --outlinerColor: rgb(65, 145, 232);
+    --footerColor: #0f172a;
     /* Fontes */
     --fontPrimary: 'Playfair Display', serif;
     --fontSecondary: 'Montserrat', sans-serif;
@@ -231,7 +232,7 @@ header.hidden {
     display: flex;
     flex-direction: column;
     font-family: var(--fontSecondary);
-    background: #0f172a;   
+    background: var(--footerColor);   
     border-top: 1px solid rgba(255,255,255,0.08);
     
     h3 {
