@@ -2,12 +2,11 @@
 ====================================================
                 Animação Header 
 ==================================================== */
-if ('scrollRestoration' in history) { //desativa o scroll restore automatico do navegador
-    history.scrollRestoration = 'manual';
-}
+
 
 window.addEventListener("load", () => {//garantir que comece sempre no topo
     window.scrollTo(0, 0);
+    document.body.style.overflow = 'auto';
 });
 
 let scrollInicial = window.scrollY; //valor onde qdo estamos no topo da pagina ScrollY(inicio)

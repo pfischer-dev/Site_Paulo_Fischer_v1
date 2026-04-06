@@ -21,6 +21,7 @@ html {
 
 body {
     color: #0D0D0D;
+    overflow: hidden;
 }
 body.menu_open {
     overflow: hidden;
