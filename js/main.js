@@ -2,7 +2,15 @@
 ====================================================
                 Animação Header 
 ==================================================== */
-let scrollInicial = 0; //valor onde qdo estamos no topo da pagina 
+if ('scrollRestoration' in history) { //desativa o scroll restore automatico do navegador
+    history.scrollRestoration = 'manual';
+}
+
+window.addEventListener("load", () => {//garantir que comece sempre no topo
+    window.scrollTo(0, 0);
+});
+
+let scrollInicial = window.scrollY; //valor onde qdo estamos no topo da pagina ScrollY(inicio)
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
