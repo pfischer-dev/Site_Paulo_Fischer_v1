@@ -149,13 +149,14 @@ body {
     
                 }
                 & .btn_hub_explorer {
-                    padding: 1rem;
+                    padding: 0.7rem;
                     margin-top: 2.5rem;
                     background-color: transparent;
-                    width: 50%;
+                    width: 45%;
                     font-family: var(--fontSecondary);
                     font-size: 1.4rem;
                     font-weight: lighter;
+
                     
                     
                     &.photo {
@@ -207,6 +208,9 @@ body {
             aspect-ratio: auto;
             background-size: cover;
             background-position: bottom 10%;
+        }
+        .btn_hub_explorer {
+            max-width: 400px;
         }
     }
 
