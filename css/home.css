@@ -51,32 +51,37 @@ body {
             line-height: 1.1;
             
             & span {
-                font-size: 2rem;
+                font-size: var(--fs-hero-span);
                 font-family: var(--fontSecondary);
                 font-weight: 300;
             }
 
             & h1 {
-                font-size: 4rem;
+                font-size: var(--fs-hero);
+                font-weight: 700;
                 letter-spacing: 1px;
                 font-family: var(--fontPrimary);
-                font-weight: 700;
-
+                
             }
             & .btn_hero_explorer {
                 display: flex;
                 justify-content: center;
-                font-family: var(--fontSecondary);
-                width: clamp(120px, 50%, 220px);
                 text-align: center;
-                border-radius: 15px;
-                border: 1px solid var(--lightColor);
+                width: clamp(120px, 50%, 300px);
                 background-color: transparent;
                 color: var(--lightColor);
-                padding: 0.3rem 0.5rem;
-                cursor: pointer;
-                margin-top: 1rem;
 
+                font-family: var(--fontSecondary);
+                font-size: var(--fs-hero-button);
+                font-weight: lighter;
+                border: 1px solid var(--lightColor);
+                /* A DECIDIR border-radius: 25px; */
+                padding: 0.3rem 0.5rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                
+                
+                
                 &:hover {
                     background-color: var(--outlinerColor);
                     border: none;
@@ -85,9 +90,11 @@ body {
             }
         }
     }
-/* ===== Hero Responsive ============================== */
-/*  nao houve necessidade de medias */
-/* ===================================================== */
+/*
+====================================================
+                    HERO Responsive
+==================================================== */
+
 
 
 /*
@@ -146,10 +153,14 @@ body {
                 position: absolute;
                 z-index: 2;
 
+                .hub_title {
+                    font-size: var(--fs-hub-title);
+                }
             
                 & .hub_subtitle {
                     margin-top: 0.4rem;
                     font-weight: 500;
+                    font-size: var(--fs-hub-subtitle);
     
                 }
                 & .btn_hub_explorer {
@@ -160,8 +171,6 @@ body {
                     font-family: var(--fontSecondary);
                     font-size: 1.4rem;
                     font-weight: lighter;
-
-                    
                     
                     &.photo {
                         color: black;
@@ -171,7 +180,7 @@ body {
                     &.dev {
                         color: var(--lightColor);
                         font-weight: 500;
-                        border: 1px solid var(--lightColor);
+                        border: 1px solid var(--lightColor); 
                     }
                 }
             }
@@ -189,10 +198,8 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                
+                justify-content: center;   
             }
-            
         }
     }
 
@@ -253,12 +260,13 @@ body {
                 
             }
 
-            h2 {
+            .about_msg {
                 position: absolute;
                 color: var(--lightColor);
                 font-family: var(--fontPrimary);
                 font-size: 3.3rem;
                 padding: 0.5rem 1.5rem;
+                
                 
             }
             span {
@@ -279,6 +287,19 @@ body {
             }
         }
     }
+
+/*
+====================================================
+                    RESPONSIVE ABOUT
+==================================================== */
+    
+
+
+
+/*
+====================================================
+                    
+==================================================== */
 
 
 }
