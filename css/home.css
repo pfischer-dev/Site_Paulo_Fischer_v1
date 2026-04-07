@@ -164,6 +164,8 @@ body {
     
                 }
                 & .btn_hub_explorer {
+                    display: flex;
+                    justify-content: center;
                     padding: 0.5rem;
                     margin-top: 2.5rem;
                     background-color: transparent;
@@ -180,11 +182,12 @@ body {
                     &.dev {
                         color: var(--lightColor);
                         font-weight: 500;
-                        border: 1px solid var(--lightColor); 
+                        border: 1px solid var(--lightColor);
+                        text-decoration: none;
                     }
                 }
             }
-            &.photo {
+            &.photo { /* hub_item photo */
                 color: black;
                 display: flex;
                 flex-direction: column;
@@ -192,7 +195,7 @@ body {
                 justify-content: center;
                 
             }
-            &.dev {
+            &.dev {/* hub_item dev */
                 color: white;
                 background-color: black;
                 display: flex;
@@ -224,8 +227,6 @@ body {
             max-width: 400px;
         }
     }
-
-
 
 /*  ==================================================== */
 /*
@@ -263,19 +264,23 @@ body {
             .about_msg {
                 position: absolute;
                 color: var(--lightColor);
-                font-family: var(--fontPrimary);
-                font-size: 3.3rem;
-                padding: 0.5rem 1.5rem;
-                
-                
-            }
-            span {
-                font-size: 3.5rem;
-            }
+                font-family: var(--fontSecondary);
+                font-size: var(--fs-about-span);
+                font-weight: 300;
+                padding: 0.5rem 3rem;
+                line-height: 0.9;
+                text-transform: capitalize;
 
+            }
+            span { /* texto maior */
+                font-size:var(--fs-about);
+                font-family: var(--fontPrimary);
+                font-weight: 700;
+
+            }
         }
         .about_content {
-            height: 48%;
+            height: 30%;
             width: 100%;
 
             .about_description {
