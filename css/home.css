@@ -67,7 +67,7 @@ body {
                 display: flex;
                 justify-content: center;
                 text-align: center;
-                width: clamp(120px, 50%, 300px);
+                width: clamp(120px, 50%, 150px);
                 background-color: transparent;
                 color: var(--lightColor);
 
@@ -114,7 +114,6 @@ body {
             min-height: 50vh;
             width: 100%;
             
-
             & .hub_img_photo {
                 height: 100%;
                 width: 102%;
@@ -128,7 +127,6 @@ body {
                 transform: scale(1.55);
                 transition: transform 0.3s ease;
                 
-
             }
             & .hub_img_dev {
             height: 100%;
@@ -136,9 +134,9 @@ body {
 
             position: absolute;
             inset: 0;
-            transform: scale(1.55);
+            transform: scale(1.35);
             object-fit: cover;
-            object-position: 102% 36%;
+            object-position: 102% 75%;
             transition: transform 0.3s ease;
             opacity: 0.5;
             }
@@ -215,7 +213,7 @@ body {
     @media (min-width: 678px){
         .hub_item.photo, .hub_item.dev {
             aspect-ratio: 16/9;
-            height: 100vh;
+            height: 100%;
         }
         
         .hub_img_photo, .hub_img_dev {
@@ -242,7 +240,7 @@ body {
         background-color: #727272;
         .about_img {
             position: relative;
-            height: 70%;
+            height: 60%;
             display: flex;
             
             img {
@@ -254,7 +252,7 @@ body {
                 transform-origin: 20% 86%;
                 width: 100%;
                 transform: scale(1.2);
-                filter: contrast(1.5);
+                filter: contrast(1.7);
                 opacity: 0.6;
                 -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
                 mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
@@ -267,7 +265,7 @@ body {
                 font-family: var(--fontSecondary);
                 font-size: var(--fs-about-span);
                 font-weight: 300;
-                padding: 0.5rem 3rem;
+                padding: 0.5rem 2rem;
                 line-height: 0.9;
                 text-transform: capitalize;
 
@@ -280,7 +278,9 @@ body {
             }
         }
         .about_content {
-            height: 30%;
+            /* position: absolute; */
+            top: 45%;
+            height: 40%;
             width: 100%;
 
             .about_description {
@@ -288,7 +288,9 @@ body {
                 color: var(--lightColor);
                 padding: 0 3rem;
                 font-size: 1rem;
+                font-weight: lighter;
                 line-height: 1.7;
+                text-shadow: 1px 1px 10px black;
             }
         }
     }
