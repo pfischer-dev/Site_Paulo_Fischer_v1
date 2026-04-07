@@ -126,10 +126,14 @@ body {
             & .hub_img_dev {
             height: 100%;
             width: 110%;
-            transform: scale(1);
+
+            position: absolute;
+            inset: 0;
+            transform: scale(1.55);
             object-fit: cover;
-            object-position: 42%;
-            opacity: 0.4;
+            object-position: 102% 36%;
+            transition: transform 0.3s ease;
+            opacity: 0.5;
             }
 
             & .hub_content {
@@ -149,7 +153,7 @@ body {
     
                 }
                 & .btn_hub_explorer {
-                    padding: 0.7rem;
+                    padding: 0.5rem;
                     margin-top: 2.5rem;
                     background-color: transparent;
                     width: 45%;
@@ -217,5 +221,64 @@ body {
 
 
 /*  ==================================================== */
+/*
+====================================================
+                    Sessão ABOUT
+==================================================== */
+    .about {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+        overflow: hidden;
+        background-color: #727272;
+        .about_img {
+            position: relative;
+            height: 70%;
+            display: flex;
+            
+            img {
+                position: absolute;
+                height: 100%;
+                inset: 0;
+                object-fit: cover;
+                object-position: 56% 18%;
+                transform-origin: 20% 86%;
+                width: 100%;
+                transform: scale(1.2);
+                filter: contrast(1.5);
+                opacity: 0.6;
+                -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+                mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+                
+            }
+
+            h2 {
+                position: absolute;
+                color: var(--lightColor);
+                font-family: var(--fontPrimary);
+                font-size: 3.3rem;
+                padding: 0.5rem 1.5rem;
+                
+            }
+            span {
+                font-size: 3.5rem;
+            }
+
+        }
+        .about_content {
+            height: 48%;
+            width: 100%;
+
+            .about_description {
+                font-family: var(--fontSecondary);
+                color: var(--lightColor);
+                padding: 0 3rem;
+                font-size: 1rem;
+                line-height: 1.7;
+            }
+        }
+    }
+
 
 }
