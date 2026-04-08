@@ -13,7 +13,7 @@
     --fs-header-logo: clamp(1.5rem, 5vw, 2.3rem);
     --fs-header-nav: clamp(1.1rem, 2.6vw, 1.5rem);
     --fs-hub-title: clamp(2rem, 5.5vw, 8rem);
-    --fs-hub-subtitle: clamp(1rem, 3vw, 5rem);
+    --fs-hub-subtitle: clamp(1rem, 3vw, 2rem);
     --fs-about: clamp(2.5rem, 5vw, 6rem);
     --fs-about-span: clamp(1.4rem, 4vw, 3rem);
     --fs-text: clamp(1rem, 2.4vw, 1.5rem);
@@ -338,6 +338,7 @@ header.hidden {
 
 @media (min-width: 1024px) {
     .footer_container {
+        padding: 1rem;
         display: grid;
         grid-template-columns: 600px 1fr 1fr 1fr;
         grid-template-areas: "footer_logo col1 col2 col3"
