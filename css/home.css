@@ -123,8 +123,8 @@ body {
                 background-image: url(../assets/img/hub_photo3.jpg);
                 background-size: cover;
                 transform-origin: top;
-                background-position: left 32%;
-                transform: scale(1.55);
+                background-position: left 29%;
+                transform: scale(1.57);
                 transition: transform 0.3s ease;
                 
             }
@@ -156,7 +156,7 @@ body {
                 }
             
                 & .hub_subtitle {
-                    margin-top: 0.4rem;
+                    /* margin-top: 0.4rem; */
                     font-weight: 500;
                     font-size: var(--fs-hub-subtitle);
     
@@ -166,8 +166,9 @@ body {
                     justify-content: center;
                     padding: 0.5rem;
                     margin-top: 2.5rem;
+                    margin-left: 1rem;
                     background-color: transparent;
-                    width: 45%;
+                    width: 51%;
                     font-family: var(--fontSecondary);
                     font-size: 1.4rem;
                     font-weight: lighter;
