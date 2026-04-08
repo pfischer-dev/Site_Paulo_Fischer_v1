@@ -12,12 +12,13 @@
     --fs-hero-button: clamp(1.4rem, 1.4vw, 3rem); /* 1.4rem */
     --fs-header-logo: clamp(1.5rem, 5vw, 2.3rem);
     --fs-header-nav: clamp(1.1rem, 2.6vw, 1.5rem);
-    --fs-hub-title: clamp(2rem, 5.5vw, 8rem);
-    --fs-hub-subtitle: clamp(1rem, 3vw, 2rem);
+    --fs-hub-title: clamp(1.8rem, 5.5vw, 8rem);
+    --fs-hub-subtitle: clamp(0.5rem, 3vw, 1.8rem);
     --fs-about: clamp(2.5rem, 5vw, 6rem);
     --fs-about-span: clamp(1.4rem, 4vw, 3rem);
     --fs-text: clamp(1rem, 2.4vw, 1.5rem);
     --fs-footer-title: clamp(1.8rem, 2.7vw, 2.5rem);
+    
 }
 
 * {
@@ -279,11 +280,13 @@ header.hidden {
         }
 
         a {
-            font-size: 0.8rem;
+            font-size: clamp(0.8rem, 1vw, 1.7rem);/* 0.8rem */
+            line-height: 1.6;
             margin-top: 0.1rem;
             color: var(--lightColor);
             font-weight: lighter;
             opacity: 0.7;
+
         }
         &.col1 {
             grid-area: col1;

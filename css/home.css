@@ -129,8 +129,8 @@ body {
                 background-image: url(../assets/img/hub_photo3.jpg);
                 background-size: cover;
                 transform-origin: top;
-                background-position: left 30%;
-                transform: scale(1.55);
+                background-position: left 31%;
+                transform: scale(1.6);
                 transition: transform 0.3s ease;
                 
             }
@@ -165,18 +165,19 @@ body {
                 & .hub_subtitle {
                     font-weight: 500;
                     font-size: var(--fs-hub-subtitle);
+                    margin-bottom: 0.5rem;
     
                 }
                 & .btn_hub_explorer {
                     display: flex;
                     justify-content: center;
                     /* padding: 0.5rem; */
-                    margin-top: 2.5rem;
-                    margin-left: 1rem;
+                    margin-top: 1.5rem;
+                    margin-left: 1.1rem;
                     background-color: transparent;
                     width: 51%;
                     font-family: var(--fontSecondary);
-                    font-size: 1.4rem;
+                    font-size: clamp(1rem, 1.7vw, 5rem)/* 1.4rem */;
                     font-weight: lighter;
                     
                     &.photo {
@@ -188,7 +189,13 @@ body {
                         color: var(--lightColor);
                         font-weight: 500;
                         border: 1px solid var(--lightColor);
-                        text-decoration: none;
+                    }
+                    &:hover {
+                        background-color: var(--outlinerColor);
+                        color: var(--lightColor);
+                        border: none;
+                        box-shadow: 0.5px 0.5px 15px var(--outlinerColor);
+
                     }
                 }
             }
@@ -231,7 +238,7 @@ body {
             background-position: bottom 10%;
         }
         .btn_hub_explorer {
-            max-width: 400px;
+            max-width: 300px;
         }
     }
 
