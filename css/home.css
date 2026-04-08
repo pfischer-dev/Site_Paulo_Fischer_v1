@@ -287,7 +287,7 @@ body {
                 font-family: var(--fontSecondary);
                 color: var(--lightColor);
                 padding: 0 3rem;
-                font-size: 1rem;
+                font-size: var(--fs-text);
                 font-weight: lighter;
                 line-height: 1.7;
                 text-shadow: 1px 1px 10px black;
@@ -299,7 +299,16 @@ body {
 ====================================================
                     RESPONSIVE ABOUT
 ==================================================== */
-    
+    @media (min-width: 678px) {
+        .about_description {
+            max-width: 80%;
+            margin: 0 auto;
+            line-height: 1.5;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
 
 
 

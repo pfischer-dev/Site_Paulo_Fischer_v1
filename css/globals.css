@@ -15,7 +15,9 @@
     --fs-hub-title: clamp(2rem, 5.5vw, 8rem);
     --fs-hub-subtitle: clamp(1rem, 3vw, 5rem);
     --fs-about: clamp(2.5rem, 5vw, 6rem);
-    --fs-about-span: clamp(1.4rem, 4vw, 3rem)
+    --fs-about-span: clamp(1.4rem, 4vw, 3rem);
+    --fs-text: clamp(1rem, 3vw, 1.4rem);
+    --fs-footer-title: clamp(1.8rem, 2.7vw, 2.5rem);
 }
 
 * {
@@ -73,9 +75,6 @@ header {
         font-family: var(--fontSecondary);
         font-weight: lighter;
         
-        
-        
-
         & a {
             display: flex;
             align-items: center;
@@ -104,8 +103,6 @@ header {
         color: var(--lightColor);
         margin: 1rem;
         cursor: pointer;
-        
-        
     }
     
     & .active {
@@ -220,7 +217,6 @@ header.hidden {
     }   
 }
 
-
 /* ===== Aside Responsive ============================== */
 @media (min-width: 768px) and (max-width: 1280px) {
     .hero-social {
@@ -229,13 +225,9 @@ header.hidden {
 }
 /* ===================================================== */
 
-
-
-/*
-====================================================
+/* ====================================================
                     FOOTER
 ==================================================== */
-
 .footer_container {
     display: flex;
     flex-direction: column;
@@ -243,10 +235,11 @@ header.hidden {
     background: var(--footerColor);   
     border-top: 1px solid rgba(255,255,255,0.08);
     
-    h3 {
-        font-size: 1.4rem;
+    .footer_logo {
+        font-size: var(--fs-footer-title);
         margin: 1rem 0 0 1rem;
         color: var(--lightColor);
+        grid-area: footer_logo;
     }
 
     .footer_cta {
@@ -254,18 +247,20 @@ header.hidden {
         margin: 1rem 0 0 1rem;
         color: var(--lightColor);
         opacity: 0.7;
+        grid-area: footer_cta;
+
     }
 
     .footer_social_media {
         display: flex;
         justify-content: space-between;
-        margin: 1rem 0 0 1rem;
+        margin: 1rem;
         gap: 0.5rem;
         width: 50%;
-
+        grid-area: footer_social;
         & img {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             display: flex;
             color: var(--lightColor);
             transition: 0.3s ease;
@@ -290,24 +285,66 @@ header.hidden {
             font-weight: lighter;
             opacity: 0.7;
         }
+        &.col1 {
+            grid-area: col1;
+        }
+        &.col2 {
+            grid-area: col2;
+        }
+        &.col3 {
+            grid-area: col3;
+        }
     }
     .copyrights {
         margin: 1rem 0 0 1rem;
         color: var(--lightColor);
-        text-align: center;
+        text-align: start;
         font-size: 0.8rem;
         font-weight: 300;
         opacity: 0.7;
+        grid-area: copyrights;
     }
-
 }
 /* 
 ====================================================
                 RESPONSIVE FOOTER
 ==================================================== */
-
 @media (min-width: 393px) {
     .footer_social_media {
         max-width: 200px;
     }
 }
+
+@media (min-width: 686px) and (max-width: 868px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+        grid-template-areas: "footer_logo col1 col2 col3"
+                            "footer_cta col1 col2 col3"
+                            "footer_social col1 col2 col3"
+                            "copyrights col1 col2 col3";
+    }   
+}
+
+@media (min-width: 868px) and (max-width: 1024px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: 370px 1fr 1fr 1fr;
+        grid-template-areas: "footer_logo col1 col2 col3"
+                            "footer_cta col1 col2 col3"
+                            "footer_social col1 col2 col3"
+                            "copyrights col1 col2 col3";
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: 600px 1fr 1fr 1fr;
+        grid-template-areas: "footer_logo col1 col2 col3"
+                            "footer_cta col1 col2 col3"
+                            "footer_social col1 col2 col3"
+                            "copyrights col1 col2 col3";
+    }
+}
+
