@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 ==================================================== */
 
 .container {
-
+    
     & .hero {
         position: relative;
         min-height: 100svh;
@@ -21,7 +22,7 @@ body {
         align-items: center;
         overflow: hidden;
         transition: 1.2s ease;
-        
+        scroll-snap-align: start;
         &.blur {
             filter: blur(10px);
         }
@@ -106,6 +107,7 @@ body {
         display: flex;
         flex-direction: column;
         min-height: 50dvh;
+        
         & .hub_item {
             font-family: var(--fontSecondary);
             letter-spacing: 0.3rem;
@@ -114,6 +116,9 @@ body {
             min-height: 0;
             height: 50dvh;
             width: 100%;
+            scroll-snap-align: start;
+            
+            
             
             & .hub_img_photo {
                 height: 100%;
@@ -124,7 +129,7 @@ body {
                 background-image: url(../assets/img/hub_photo3.jpg);
                 background-size: cover;
                 transform-origin: top;
-                background-position: left 29%;
+                background-position: left 30%;
                 transform: scale(1.55);
                 transition: transform 0.3s ease;
                 
@@ -236,6 +241,7 @@ body {
                     Sessão ABOUT
 ==================================================== */
     .about {
+        scroll-snap-align: start;
         position: relative;
         display: flex;
         flex-direction: column;
