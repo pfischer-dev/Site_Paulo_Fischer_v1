@@ -226,39 +226,53 @@ header.hidden {
 }
 /* ===================================================== */
 /* ====================================================
-                    Contact
+                    SESSAO CONTACT 
 ==================================================== */
 .contact {
-    
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 0;
     background-color: #0a0a0a;
     text-align: center;
     scroll-snap-align: start;
     padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .contact_title {
+        font-size: 2.5rem;
+        font-family: var(--fontPrimary);
+        color: var(--lightColor);
+        grid-area: contact_title;
+    }
+    .contact_subtitle {
+        font-size: 1.5rem;
+        font-family: var(--fontPrimary);
+        color: var(--lightColor);
+        grid-area: contact_subtitle;
+    }
+
 
     .contact_container {
+        height: 100% ;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         color: var(--lightColor);
         
-       
-
-        .contact_title {
-            font-size: 3rem;
-            font-family: var(--fontPrimary);
-        }
-
+        
         .contact_form {
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items:  start;
             width: 100%;
+            height: 100% ;
             gap: 1rem;
             padding: 1rem;
             margin-top: 2rem;
             border-radius: 15px;
+            
 
             .contact_label {
                 display: flex;
@@ -266,13 +280,14 @@ header.hidden {
                 justify-content: center;
                 gap: 0.5rem;
                 font-family: var(--fontSecondary);
+                grid-area: contact_label;
 
                 img {
-                    width: 100px;
-                    height: 100px;
+                    width: 80px;
+                    height: 80px;
 
                 }
-                .contact_subtitle {
+                .contact_whats {
                     font-size: 1.5rem;
                     font-weight: 700;
                     margin-top: 3rem 1rem;
@@ -289,6 +304,7 @@ header.hidden {
                 background-color: rgba(128, 128, 128, 0.271);
                 color: var(--outlinerColor);
                 border-radius: 4px;
+                font-size: 0.8rem;
             }
             .form_email {
                 width: 100%;
@@ -297,15 +313,17 @@ header.hidden {
                 background-color: rgba(128, 128, 128, 0.271);
                 border-radius: 4px;
                 color: var(--outlinerColor);
+                font-size: 0.8rem;
 
             }
             .form_mensagem {
                 width: 100%;
-                min-height: 250px;
+                height: 200px;
                 border: 1px solid rgba(128, 128, 128, 0.595);
                 background-color: rgba(128, 128, 128, 0.271);
                 border-radius: 4px;
                 color: var(--outlinerColor);
+                font-size: 0.8rem;
 
             }
             .btn-whats {
@@ -314,51 +332,58 @@ header.hidden {
                 background-color: rgba(128, 128, 128, 0.271);
                 border-radius: 4px;
                 color: var(--outlinerColor);
+                font-size: clamp(0.8rem, 1.3vw, 1.2rem);
 
             }
-
-        }
-        .contact_links {
-            margin: 1rem;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            cursor: pointer;
-
-            .contact_instagram {
-                
-            }
-            
-            .contact_email {
-
-            }
-
-            .contact_github {
-                
-            }
-
-            img {
-                width: 50px;
-                
-                &:hover {
-                    transform: translate(3px, -3px);
-                    transition: 0.3s ease;
-                    
-                }
-                
-            }
-            
 
         }
         
+    }
+    .contact_links {
+        margin: 1rem;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        grid-area: contact_links;
+        
+        
+        .contact_instagram {
+        }
+        
+        .contact_email {
+        }
 
+        .contact_github {
+            
+        }
+
+        img {
+            width: 50px;
+            
+            &:hover {
+                transform: translate(3px, -3px);
+                transition: 0.3s ease;
+                
+            }  
+        }
     }
 }
+/* ====================================================
+                    RESPONSIVE CONTACT
+==================================================== */
+@media (min-width: 686px) {
+    .contact {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "contact_label contact_title"
+                            "contact_label contact_subtitle"
+                            "contact_label contact_links";
+    }
 
-
-
-
+}
 
 /* ====================================================
                     FOOTER
