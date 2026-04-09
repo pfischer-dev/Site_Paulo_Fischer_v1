@@ -349,13 +349,16 @@ header.hidden {
         
         
         .contact_instagram {
+            color: var(--lightColor);
         }
         
         .contact_email {
+            color: var(--lightColor);
         }
 
         .contact_github {
-            
+            color: var(--lightColor);
+
         }
 
         img {
