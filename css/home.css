@@ -264,13 +264,13 @@ body {
                 inset: 0;
                 object-fit: cover;
                 object-position: 56% 18%;
-                transform-origin: 20% 86%;
+                transform-origin: 20% 150%;
                 width: 100%;
                 transform: scale(1.2);
                 filter: contrast(1.7);
                 opacity: 0.6;
-                -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-                mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+                -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+                mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
                 
             }
 
@@ -293,19 +293,21 @@ body {
             }
         }
         .about_content {
-            /* position: absolute; */
+            position: absolute;
             top: 45%;
             height: 40%;
             width: 100%;
 
             .about_description {
+                height: 100%;
                 font-family: var(--fontSecondary);
                 color: var(--lightColor);
                 padding: 0 3rem;
                 font-size: var(--fs-text);
                 font-weight: lighter;
-                line-height: 1.7;
+                line-height: 1.5;
                 text-shadow: 1px 1px 10px black;
+                text-align: center;
             }
         }
     }
@@ -315,6 +317,11 @@ body {
                     RESPONSIVE ABOUT
 ==================================================== */
     @media (min-width: 678px) {
+        .about_img {
+            transform-origin: 36% 156%;
+            transform: scale(1);
+        }
+        
         .about_description {
             max-width: 80%;
             margin: 0 auto;
@@ -323,8 +330,8 @@ body {
             display: flex;
             justify-content: center;
         }
+        
     }
-
 
 
 /*
