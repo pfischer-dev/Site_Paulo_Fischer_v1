@@ -255,7 +255,7 @@ body {
         background-color: #727272;
         .about_img {
             position: relative;
-            height: 60%;
+            height: 70%;
             display: flex;
             
             img {
@@ -269,8 +269,8 @@ body {
                 transform: scale(1.2);
                 filter: contrast(1.7);
                 opacity: 0.6;
-                -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-                mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+                -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+                mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
                 
             }
 
@@ -294,7 +294,7 @@ body {
         }
         .about_content {
             position: absolute;
-            top: 45%;
+            top: 55%;
             height: 40%;
             width: 100%;
 
@@ -323,12 +323,13 @@ body {
         }
         
         .about_description {
+            max-height: 100%;
             max-width: 80%;
             margin: 0 auto;
-            line-height: 1.5;
             text-align: center;
             display: flex;
             justify-content: center;
+            
         }
         
     }

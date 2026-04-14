@@ -17,7 +17,7 @@
     --fs-hub-subtitle: clamp(0.5rem, 3vw, 1.8rem);
     --fs-about: clamp(2.5rem, 5vw, 6rem);
     --fs-about-span: clamp(1.4rem, 4vw, 3rem);
-    --fs-text: clamp(1.27rem, 3vw, 1.94rem);
+    --fs-text: clamp(1.2rem, 3vw, 2.5rem);
     --fs-footer-title: clamp(1.8rem, 2.7vw, 2.5rem);
     
 }
@@ -341,6 +341,37 @@ header.hidden {
 ==================================================== */
 @media (min-width: 678px) {
     .contact_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* align-items: center; */
+    }
+    .contact_whatsapp {
+        max-width: 40%;
+        align-items: center;
+    }
+    .contact_form {
+        max-width: 40%;
+        justify-content: start;
+    }
+    .contact_right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .contact_header {
+
+        }
+        
+    }
+    .contact_links {
+
+    }
+}
+
+/* @media (min-width: 678px) {
+    .contact_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -390,7 +421,7 @@ header.hidden {
         grid-area: links;        
         justify-content: flex-start; 
     }
-}
+} */
 
 /* ====================================================
                     FOOTER
