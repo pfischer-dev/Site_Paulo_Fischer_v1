@@ -17,7 +17,7 @@
     --fs-hub-subtitle: clamp(0.5rem, 3vw, 1.8rem);
     --fs-about: clamp(2.5rem, 5vw, 6rem);
     --fs-about-span: clamp(1.4rem, 4vw, 3rem);
-    --fs-text: clamp(1.2rem, 3vw, 2.5rem);
+    --fs-text: clamp(1.1rem, 3vw, 2.5rem);
     --fs-footer-title: clamp(1.8rem, 2.7vw, 2.5rem);
     
 }
