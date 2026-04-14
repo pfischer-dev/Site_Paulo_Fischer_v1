@@ -283,7 +283,7 @@ header.hidden {
         }
         .form_mensagem {
             width: 100%;
-            height: 200px;
+            min-height: 150px;
             border-radius: 3px;
             border: 1px solid rgba(128, 128, 128, 0.595);
             background-color: rgba(128, 128, 128, 0.271);
