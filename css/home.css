@@ -96,6 +96,68 @@ body {
                     HERO Responsive
 ==================================================== */
 
+/* ===================================================== 
+                            SESSAO STORYTELLING 
+    ===================================================== */
+
+    .storytelling {
+        scroll-snap-align: start;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background-image: url(../assets/img/paulofischerFACE-9298.jpg);
+            background-size: cover;
+            background-position: 36%;
+            transform: scale(1.1);
+            z-index: 0;
+        }
+
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .story_content {
+            position: relative;
+            z-index: 2;
+            padding: 1.5rem;
+            color: var(--lightColor);
+
+            h1 {
+                font-size: clamp(5rem, 6vw, 8rem);
+
+            }
+            span {
+                transform: rotate(90deg);
+                position: absolute;
+                left: -130px;
+                top: 0;
+                display: inline-block;
+            }
+
+            p {
+                margin-top: 1rem;
+                opacity: 0.8;
+                font-size: clamp(2rem, 6vw, 5rem);
+                
+            }
+        }
+    }
+
 
 
 /*
