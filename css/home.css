@@ -320,6 +320,7 @@ body {
         .about_img {
             transform-origin: 36% 156%;
             transform: scale(1);
+            transition: transform-origin 1s ease;
         }
         
         .about_description {

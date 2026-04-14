@@ -17,7 +17,7 @@
     --fs-hub-subtitle: clamp(0.5rem, 3vw, 1.8rem);
     --fs-about: clamp(2.5rem, 5vw, 6rem);
     --fs-about-span: clamp(1.4rem, 4vw, 3rem);
-    --fs-text: clamp(1.1rem, 3vw, 2.5rem);
+    --fs-text: clamp(1.1rem, 2.6vw, 1.7rem);
     --fs-footer-title: clamp(1.8rem, 2.7vw, 2.5rem);
     
 }
@@ -238,85 +238,92 @@ header.hidden {
     scroll-snap-align: start;
     background: linear-gradient(to bottom,#0d0d0d,#050505);
     
-    .contact_whatsapp {
-        width: 100%;
-        color: var(--lightColor);
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 3rem;
-        font-size: 2rem;
-        font-family: var(--fontPrimary);
-        order: 2;
-        margin-bottom: 1rem;
-        img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-    .contact_form {
-        width: 100%;
-        max-height: 100%;
+    .contact_left {
+        height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        text-align: center;
-        order: 3;
-        
-        .form_name {
+        .contact_whatsapp {
             width: 100%;
-            height: 30px;
-            border-radius: 3px;
-            border: 1px solid rgba(128, 128, 128, 0.595);
-            background-color: rgba(128, 128, 128, 0.271);
-            color: var(--outlinerColor);
+            color: var(--lightColor);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 3rem;
+            font-size: clamp(1.85rem, 3vw, 4.5rem);/* clamp(2rem, 4vw, 5rem) */;
+            font-family: var(--fontPrimary);
+            margin-bottom: 1rem;
+            img {
+                width: 80px;
+                height: 80px;
+            }
         }
-        .form_email {
+        .contact_form {
             width: 100%;
-            height: 30px;
-            border-radius: 3px;
-            border: 1px solid rgba(128, 128, 128, 0.595);
-            background-color: rgba(128, 128, 128, 0.271);
-            color: var(--outlinerColor);
-
-        }
-        .form_mensagem {
-            width: 100%;
-            min-height: 100px;
-            border-radius: 3px;
-            border: 1px solid rgba(128, 128, 128, 0.595);
-            background-color: rgba(128, 128, 128, 0.271);
-            color: var(--outlinerColor);
-
-        }
-        .btn-whats {
-            width: 50%;
-            height: 30px;
-            border-radius: 3px;
-            border: 1px solid rgba(128, 128, 128, 0.595);
-            background-color: rgba(128, 128, 128, 0.271);
-            color: var(--outlinerColor);
+            max-height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            text-align: center;
+            
+            
+            .form_name {
+                width: 100%;
+                height: 30px;
+                border-radius: 3px;
+                border: 1px solid rgba(128, 128, 128, 0.595);
+                background-color: rgba(128, 128, 128, 0.271);
+                color: var(--outlinerColor);
+            }
+            .form_email {
+                width: 100%;
+                height: 30px;
+                border-radius: 3px;
+                border: 1px solid rgba(128, 128, 128, 0.595);
+                background-color: rgba(128, 128, 128, 0.271);
+                color: var(--outlinerColor);
+    
+            }
+            .form_mensagem {
+                width: 100%;
+                min-height: 100px;
+                border-radius: 3px;
+                border: 1px solid rgba(128, 128, 128, 0.595);
+                background-color: rgba(128, 128, 128, 0.271);
+                color: var(--outlinerColor);
+    
+            }
+            .btn-whats {
+                width: 50%;
+                height: 30px;
+                border-radius: 3px;
+                border: 1px solid rgba(128, 128, 128, 0.595);
+                background-color: rgba(128, 128, 128, 0.271);
+                color: var(--outlinerColor);
+                font-size: clamp(0.8rem , 1vw, 1.4rem);
+            }
         }
     }
+
+    
     .contact_right {
-        order: 1;
+        
         .contact_header {
             color: var(--lightColor);
-            font-size: 1.85rem;
+            font-size: clamp(1.85rem, 3vw, 4.5rem);
             font-weight: 700;
-            padding: .5rem;
+            margin: 3rem 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            /* margin-top: 1rem; */
-            gap:1rem;
+            gap: 1rem;
+            
 
             p {
                 width: 60%;
-                font-size: 1.3rem;
+                
                 font-weight: 500;
                 font-family: var(--fontSecondary);
             }
@@ -326,7 +333,7 @@ header.hidden {
             width: 100%;
             display: flex;
             justify-content: center;
-            gap: 4rem;
+            gap: 1.5rem;
             margin: 1.5rem 0;
             
             a {
@@ -346,83 +353,79 @@ header.hidden {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* align-items: center; */
-    }
-    .contact_whatsapp {
-        max-width: 40%;
-        align-items: center;
-    }
-    .contact_form {
-        max-width: 40%;
-        justify-content: start;
-    }
-    .contact_right {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
 
-        .contact_header {
-
-        }
-        
-    }
-    .contact_links {
-
-    }
-}
-
-/* @media (min-width: 678px) {
-    .contact_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        padding: 4rem 3rem;
-        }
-
-    .contact_whatsapp {
-        grid-column: 1;
-        grid-row: 1;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-
-    .contact_form {
-        grid-column: 1;
-        grid-row: 2;
-        max-width: 100%;
-        max-height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
-        margin-top: 1rem;
-        align-self: start;
-
-        .form_mensagem {
+        .contact_left {
+            width: 50%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .contact_whatsapp {
+                width: 80%;
+                display: flex;
+                align-items: start;
+                
+                
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .contact_form {
+                width: 80%;
+                height: 100%;
+                justify-content: center;
+                gap: 1rem;
+
+
+                .form_name {
+                    height: 30px;
+                    font-size: 1.2rem;
+                }
+
+                .form_email {
+                    height: 30px;
+                    font-size: 1.2rem;
+
+
+                }
+
+                .form_mensagem {
+                    height: 200px;
+                    font-size: 1.2rem;
+
+                }
+                .btn-whats {
+                    height:40px;
+                    font-size: 1.4rem;
+
+
+                }
+            }
         }
-    }
-    .contact_right {
-        grid-column: 2;
-        grid-row: 1/3;
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact_header {
-        grid-area: header;
-        align-items: flex-start;
-        height: 100%;
-    }
-
-    .contact_links {
-        grid-area: links;        
-        justify-content: flex-start; 
-    }
-} */
+        .contact_right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 6rem;
+            justify-content: end;
+    
+            .contact_header {
+                
+            }
+            
+        }
+        .contact_links {
+            
+            a { 
+                width: 60px;
+                height: 70px;
+                
+            }
+        }
+    } 
+}
 
 /* ====================================================
                     FOOTER
