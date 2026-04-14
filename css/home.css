@@ -169,7 +169,7 @@ body {
                 & .btn_hub_explorer {
                     display: flex;
                     justify-content: center;
-                    /* padding: 0.5rem; */
+                    padding: 0.5rem;
                     margin-top: 1.5rem;
                     margin-left: 1.1rem;
                     background-color: transparent;
