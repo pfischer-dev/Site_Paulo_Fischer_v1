@@ -108,7 +108,9 @@ header {
     }
     
     & .active {
-        display: block; 
+        display: block;
+        font-size: 10rem;
+        font-weight: 700;
         
     }
     
@@ -131,8 +133,7 @@ header.hidden {
 
 /* ===== HEADER RESPONSIVE ===== */
 
-/* Tablet */
-/* NAO PRECISA */
+/* Tablet NAO PRECISA */
 
 /* Desktop */
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -220,7 +221,7 @@ header.hidden {
 }
 
 /* ===== Aside Responsive ============================== */
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) {
     .hero-social {
         display: block;
     } 
@@ -363,7 +364,7 @@ header.hidden {
 /* ====================================================
                     RESPONSIVE CONTACT
 ==================================================== */
-@media (min-width: 678px) {
+@media (min-width: 814px) {
     .contact_container {
         display: flex;
         flex-direction: row;
