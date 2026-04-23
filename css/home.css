@@ -99,69 +99,69 @@ body {
 /* ===================================================== 
                             SESSAO STORYTELLING 
     ===================================================== */
-
-    .storytelling {
-        scroll-snap-align: start;
-        min-height: 100vh;
-        width: 100%;
+    .story {
         position: relative;
-        
+        scroll-snap-align: start;
+        min-height: 100svh;
         display: flex;
-        flex-direction: column;
-        justify-content: end;
-        text-align: center;
-        overflow: hidden;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 2rem;
+        color: var(--lightColor);
+        background-image: url("../assets/img/240214_bpp_brasilopen2014guidopellaxleonardomayer_pf-8789.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
         &::before {
             content: "";
             position: absolute;
             inset: 0;
-
-            background-image: url(../assets/img/paulofischerFACE-9298.jpg);
-            background-size: cover;
-            background-position: 36%;
-            transform: scale(1.1);
-            z-index: 0;
-        }
-
-
-        .overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.25);
+            z-index: 1;
+            background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.7) 20%,
+    rgba(0,0,0,0.3) 50%,
+    rgba(0,0,0,0.1) 100%);
         }
 
         .story_content {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
             z-index: 2;
             padding: 1.5rem;
-            color: var(--lightColor);
-
-            h1 {
-                font-size: clamp(5rem, 6vw, 8rem);
-
-            }
-            span {
-                transform: rotate(90deg);
-                position: absolute;
-                left: -130px;
-                top: 0;
-                display: inline-block;
+            gap: 4rem;
             }
 
-            p {
-                margin-top: 1rem;
-                opacity: 0.8;
-                font-size: clamp(2rem, 6vw, 5rem);
+            .title {
+                text-align:left;
+                font-size: clamp(3.9rem, 9vw, 10rem);
+                font-weight: bolder;
+                line-height: 1.1;
+            }
+
+            .subtitle {
+                font-family: var(--fontSecondary) ;
+                font-size: clamp(1.1rem, 4vw, 1.6rem);
+                font-weight: lighter;
+                line-height: 1.6;
+                max-width: 35ch;
+                padding: 0.5rem;
+                
                 
             }
         }
     }
 
+/* ===================================================== 
+                            RESPONSIVE STORYTELLING 
+    ===================================================== */
+    
 
 
-/*
-====================================================
+
+/*====================================================
                     Section HUB
 ==================================================== */
 
@@ -404,4 +404,7 @@ body {
 ==================================================== */
 
 
-}
+
+
+
+
