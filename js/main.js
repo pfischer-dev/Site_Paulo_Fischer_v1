@@ -74,5 +74,15 @@ observador.observe(footer);
 
 /* 
 ====================================================
-                
+                FORM FAKE WHATS APP
 ==================================================== */
+
+function enviarWhats() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const msg = document.getElementById("mensagem").value;
+
+    const text = `Nome: ${name}%0AEmail: ${email}%0AMensagem: ${msg}`;
+    window.open(`https://wa.me/5511999999999?text=${text}`, '_blank');
+
+}
