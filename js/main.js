@@ -60,7 +60,7 @@ const footer = document.querySelector('.footer_container');
 const observador = new IntersectionObserver((entries) => { /* CALL BACK, funcao q roda automaticamente, uma lista de eventos de interseccao */
     entries.forEach(entry => { /* percorre cada item observado; entry=info sobre os elementos observados(footer)*/
         if(entry.isIntersecting) {/* condicional se entrou na interseccao */
-            aside.classList.add('hide'); /* add class para remove lo */
+            aside.classList.add('hide'); /* add class para remove - lo */
 
         }
         else {
@@ -83,6 +83,6 @@ function enviarWhats() {
     const msg = document.getElementById("mensagem").value;
 
     const text = `Nome: ${name}%0AEmail: ${email}%0AMensagem: ${msg}`;
-    window.open(`https://wa.me/5511999999999?text=${text}`, '_blank');
+    window.open(`https://wa.me/5511985983046?text=${text}`, '_blank');
 
 }

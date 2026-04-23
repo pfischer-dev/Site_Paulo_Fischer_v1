@@ -235,15 +235,16 @@ header.hidden {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2rem 1.8rem;
     min-height: 100vh;
     scroll-snap-align: start;
-
+    gap: 4rem; /*  */
     .contact_left {
         height: 100%;
         display: flex;
         flex-direction: column;
+        gap: .5rem;
         .contact_whatsapp {
             width: 100%;
             display: flex;
@@ -272,7 +273,7 @@ header.hidden {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 0.5rem;
+            gap: 1rem;
             text-align: center;
             
             
@@ -316,18 +317,22 @@ header.hidden {
 
     
     .contact_right {
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 2rem;
+
         .contact_header {
             color: var(--lightColor);
             font-family: var(--fontPrimary);
             font-weight: 700;
-            margin: 3rem 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            gap: 1rem;
+            
             
             h2 {
                 font-size: clamp(1.85rem, 3.9vw, 5rem);
