@@ -72,12 +72,10 @@ body {
                 width: clamp(120px, 50%, 150px);
                 background-color: transparent;
                 color: var(--lightColor);
-
                 font-family: var(--fontSecondary);
                 font-size: var(--fs-hero-button);
                 font-weight: lighter;
                 border: 1px solid var(--lightColor);
-                /* A DECIDIR border-radius: 25px; */
                 padding: 0.3rem 0.5rem;
                 margin-top: 1rem;
                 cursor: pointer;
@@ -170,18 +168,19 @@ body {
         display: flex;
         flex-direction: column;
         scroll-snap-align: start;
+        height: 100svh;
         
-        & .hub_item {
+        .hub_item {
             font-family: var(--fontSecondary);
             letter-spacing: 0.3rem;
             overflow: hidden;
             position: relative;
             min-height: 0;
-            height: 50dvh;
+            height: 50svh;
             width: 100%;
             
             
-            & .hub_img_photo {
+            .hub_img_photo {
                 height: 100%;
                 width: 100%;
                 
@@ -195,7 +194,7 @@ body {
                 transition: transform 0.3s ease;
                 
             }
-            & .hub_img_dev {
+            .hub_img_dev {
             height: 100%;
             width: 100%;
 
@@ -209,7 +208,7 @@ body {
 
             }
 
-            & .hub_content {
+            .hub_content {
                 width: 90%;
                 height: 90%;
                 display: flex;
@@ -223,13 +222,13 @@ body {
                     font-size: var(--fs-hub-title);
                 }
             
-                & .hub_subtitle {
+                .hub_subtitle {
                     font-weight: 500;
                     font-size: var(--fs-hub-subtitle);
                     margin-bottom: 0.5rem;
     
                 }
-                & .btn_hub_explorer {
+                .btn_hub_explorer {
                     display: flex;
                     justify-content: center;
                     padding: 0.5rem;
@@ -284,11 +283,37 @@ body {
 ====================================================
                     RESPONSIVE HUB
 ==================================================== */
+@media (min-width: 678px) {
+    .hub {
+        flex-direction: row;
+        min-height: 100svh;
 
-    @media (min-width: 678px){
+        .hub_item {
+            flex: 1;
+            height: auto;
+            
+        }
+    }
+
+    .hub_img_photo, .hub_img_dev {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn_hub_explorer {
+        max-width: 300px;
+    }
+}
+
+    /* @media (min-width: 678px) {
         .hub_item.photo, .hub_item.dev {
             aspect-ratio: 16/9;
-            /* height: 100%; */
+            
             height: 100vh;
             min-height: 0;
         }
@@ -301,9 +326,9 @@ body {
         .btn_hub_explorer {
             max-width: 300px;
         }
-    }
+    } */
 
-/*  ==================================================== */
+
 /*
 ====================================================
                     Sessão ABOUT
