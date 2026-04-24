@@ -169,7 +169,7 @@ body {
     .hub {
         display: flex;
         flex-direction: column;
-        min-height: 50dvh;
+        scroll-snap-align: start;
         
         & .hub_item {
             font-family: var(--fontSecondary);
@@ -179,7 +179,7 @@ body {
             min-height: 0;
             height: 50dvh;
             width: 100%;
-            scroll-snap-align: start;
+            
             
             & .hub_img_photo {
                 height: 100%;
