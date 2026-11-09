@@ -856,6 +856,366 @@ video {
      object-position: 35% center;
 }
 
+.object-\[30\%_10\%\] {
+  -o-object-position: 30% 10%;
+     object-position: 30% 10%;
+}
+
+.object-\[20\%_10\%\] {
+  -o-object-position: 20% 10%;
+     object-position: 20% 10%;
+}
+
+.object-\[60\%_10\%\] {
+  -o-object-position: 60% 10%;
+     object-position: 60% 10%;
+}
+
+.object-\[0\%_10\%\] {
+  -o-object-position: 0% 10%;
+     object-position: 0% 10%;
+}
+
+.object-\[80\%_10\%\] {
+  -o-object-position: 80% 10%;
+     object-position: 80% 10%;
+}
+
+.object-\[80\%_50\%\] {
+  -o-object-position: 80% 50%;
+     object-position: 80% 50%;
+}
+
+.object-\[80\%_0\%\] {
+  -o-object-position: 80% 0%;
+     object-position: 80% 0%;
+}
+
+.object-\[10\%_10\%\] {
+  -o-object-position: 10% 10%;
+     object-position: 10% 10%;
+}
+
+.object-\[50\%_10\%\] {
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
+}
+
+.object-\[90\%_10\%\] {
+  -o-object-position: 90% 10%;
+     object-position: 90% 10%;
+}
+
+.object-\[100\%_10\%\] {
+  -o-object-position: 100% 10%;
+     object-position: 100% 10%;
+}
+
+.object-\[2\%_10\%\] {
+  -o-object-position: 2% 10%;
+     object-position: 2% 10%;
+}
+
+.object-\[22\%_10\%\] {
+  -o-object-position: 22% 10%;
+     object-position: 22% 10%;
+}
+
+.object-\[25\%_10\%\] {
+  -o-object-position: 25% 10%;
+     object-position: 25% 10%;
+}
+
+.object-\[28\%_10\%\] {
+  -o-object-position: 28% 10%;
+     object-position: 28% 10%;
+}
+
+.object-\[28\%_30\%\] {
+  -o-object-position: 28% 30%;
+     object-position: 28% 30%;
+}
+
+.object-\[28\%_90\%\] {
+  -o-object-position: 28% 90%;
+     object-position: 28% 90%;
+}
+
+.object-\[35\%_10\%\] {
+  -o-object-position: 35% 10%;
+     object-position: 35% 10%;
+}
+
+.object-\[33\%_10\%\] {
+  -o-object-position: 33% 10%;
+     object-position: 33% 10%;
+}
+
+.object-\[44\%_10\%\] {
+  -o-object-position: 44% 10%;
+     object-position: 44% 10%;
+}
+
+.object-\[43\%_10\%\] {
+  -o-object-position: 43% 10%;
+     object-position: 43% 10%;
+}
+
+.object-\[41\%_10\%\] {
+  -o-object-position: 41% 10%;
+     object-position: 41% 10%;
+}
+
+.object-\[62\%_10\%\] {
+  -o-object-position: 62% 10%;
+     object-position: 62% 10%;
+}
+
+.object-\[55\%_10\%\] {
+  -o-object-position: 55% 10%;
+     object-position: 55% 10%;
+}
+
+.object-\[53\%_10\%\] {
+  -o-object-position: 53% 10%;
+     object-position: 53% 10%;
+}
+
+.object-\[58\%_10\%\] {
+  -o-object-position: 58% 10%;
+     object-position: 58% 10%;
+}
+
+.object-\[60\%_30\%\] {
+  -o-object-position: 60% 30%;
+     object-position: 60% 30%;
+}
+
+.object-\[60\%_90\%\] {
+  -o-object-position: 60% 90%;
+     object-position: 60% 90%;
+}
+
+.object-\[62\%_center\] {
+  -o-object-position: 62% center;
+     object-position: 62% center;
+}
+
+.object-\[58\%_center\] {
+  -o-object-position: 58% center;
+     object-position: 58% center;
+}
+
+.object-\[68\%_10\%\] {
+  -o-object-position: 68% 10%;
+     object-position: 68% 10%;
+}
+
+.object-\[78\%_10\%\] {
+  -o-object-position: 78% 10%;
+     object-position: 78% 10%;
+}
+
+.object-\[\%_10\%\] {
+  -o-object-position: % 10%;
+     object-position: % 10%;
+}
+
+.object-\[\] {
+  -o-object-position: ;
+     object-position: ;
+}
+
+.object-\[\+\] {
+  -o-object-position: +;
+     object-position: +;
+}
+
+.object-\[10\%_right\] {
+  -o-object-position: 10% right;
+     object-position: 10% right;
+}
+
+.object-\[55_right\] {
+  -o-object-position: 55 right;
+     object-position: 55 right;
+}
+
+.object-\[5\%_right\] {
+  -o-object-position: 5% right;
+     object-position: 5% right;
+}
+
+.object-\[right\] {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.object-\[right_5\%\] {
+  -o-object-position: right 5%;
+     object-position: right 5%;
+}
+
+.object-\[right_10\%\] {
+  -o-object-position: right 10%;
+     object-position: right 10%;
+}
+
+.object-\[right_0\%\] {
+  -o-object-position: right 0%;
+     object-position: right 0%;
+}
+
+.object-\[right_30\%\] {
+  -o-object-position: right 30%;
+     object-position: right 30%;
+}
+
+.object-\[right_50\%\] {
+  -o-object-position: right 50%;
+     object-position: right 50%;
+}
+
+.object-\[50\%right\] {
+  -o-object-position: 50%right;
+     object-position: 50%right;
+}
+
+.object-\[50right\] {
+  -o-object-position: 50right;
+     object-position: 50right;
+}
+
+.object-\[50\%_right\] {
+  -o-object-position: 50% right;
+     object-position: 50% right;
+}
+
+.object-\[right_\] {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.object-\[center_\] {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.object-\[center_20\] {
+  -o-object-position: center 20;
+     object-position: center 20;
+}
+
+.object-\[center_20\%\] {
+  -o-object-position: center 20%;
+     object-position: center 20%;
+}
+
+.object-\[center_80\%\] {
+  -o-object-position: center 80%;
+     object-position: center 80%;
+}
+
+.object-\[42_80\%\] {
+  -o-object-position: 42 80%;
+     object-position: 42 80%;
+}
+
+.object-\[42\%_80\%\] {
+  -o-object-position: 42% 80%;
+     object-position: 42% 80%;
+}
+
+.object-\[90\%_80\%\] {
+  -o-object-position: 90% 80%;
+     object-position: 90% 80%;
+}
+
+.object-\[80\%_80\%\] {
+  -o-object-position: 80% 80%;
+     object-position: 80% 80%;
+}
+
+.object-\[70\%_80\%\] {
+  -o-object-position: 70% 80%;
+     object-position: 70% 80%;
+}
+
+.object-\[100\%_80\%\] {
+  -o-object-position: 100% 80%;
+     object-position: 100% 80%;
+}
+
+.object-\[\%_80\%\] {
+  -o-object-position: % 80%;
+     object-position: % 80%;
+}
+
+.object-\[85\%_80\%\] {
+  -o-object-position: 85% 80%;
+     object-position: 85% 80%;
+}
+
+.object-\[85\%_10\%\] {
+  -o-object-position: 85% 10%;
+     object-position: 85% 10%;
+}
+
+.object-\[75\%_10\%\] {
+  -o-object-position: 75% 10%;
+     object-position: 75% 10%;
+}
+
+.object-\[5\%_10\%\] {
+  -o-object-position: 5% 10%;
+     object-position: 5% 10%;
+}
+
+.object-\[72\%_10\%\] {
+  -o-object-position: 72% 10%;
+     object-position: 72% 10%;
+}
+
+.object-\[82\%_10\%\] {
+  -o-object-position: 82% 10%;
+     object-position: 82% 10%;
+}
+
+.object-\[70\%_10\%\] {
+  -o-object-position: 70% 10%;
+     object-position: 70% 10%;
+}
+
+.object-\[48\%_10\%\] {
+  -o-object-position: 48% 10%;
+     object-position: 48% 10%;
+}
+
+.object-\[76\%_10\%\] {
+  -o-object-position: 76% 10%;
+     object-position: 76% 10%;
+}
+
+.object-\[9-\%_10\%\] {
+  -o-object-position: 9-% 10%;
+     object-position: 9-% 10%;
+}
+
+.object-\[18\%_10\%\] {
+  -o-object-position: 18% 10%;
+     object-position: 18% 10%;
+}
+
+.object-\[92\%_10\%\] {
+  -o-object-position: 92% 10%;
+     object-position: 92% 10%;
+}
+
+.object-\[95\%_10\%\] {
+  -o-object-position: 95% 10%;
+     object-position: 95% 10%;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
