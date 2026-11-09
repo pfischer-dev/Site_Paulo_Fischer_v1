@@ -1,97 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <!-- links CSS -->
-    <link rel="stylesheet" href="../css/globals.css">
-    <link rel="stylesheet" href="../css/photography.css">
-    <link rel="stylesheet" href="../css/home.css">
-    
+    <link rel="stylesheet" href="../css/tailwind.css">
+    <!-- <link rel="stylesheet" href="../css/photography.css"> -->
+
     <title>Paulo Fischer - Photography</title>
 </head>
-<body>
-    <!-- HEADER --> <!-- GLOBALS css -->
-    <header>
-        <h2 class="logo">Paulo Fischer</h2>
-        <nav class="nav_bar">
-            <a href="../index.html">home</a>
-            <a href="../pages/photography.html">photografy</a>
-            <a href="../pages/dev.html">dev</a>
-            <a href="../pages/contact.html">contact</a>
-        </nav>
-        <button class="menu-toggle">☰</button>
-        <button class="close-toggle">x</button>
+
+<body class="h-screen">
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 z-50 flex w-full items-center justify-between px-6 py-6 md:px-12 text-white">
+        <a href="../index.html" class="font-['Playfair_Display'] text-xl tracking-wide md:text-2xl">
+            Paulo Fischer
+        </a>
+
+        <button id="menu-toggle" type="button" aria-label="Abrir Menu" aria-expanded="true" aria-controls="main-menu"
+            class="flex items-center gap-3 text-sm tracking-[0.2em] transition-opacity hover:opacity-60">
+            <span id="menu-label">Menu</span>
+            <span id="menu-icon" class="text-2xl leading-none">☰</span>
+        </button>
     </header>
 
-    <!-- ASIDE -->
-    <aside class="hero-social">
-        <div>
-            <h4>Follow Us</h4>
-            <div class="line"></div>
-            <img src="../assets/icons/icon_instagram.png" alt="icone atalho instagram">
-            <img src="../assets/icons/icon_github.png" alt="icone atalho github">
-        </div>
-    </aside>
+    <!-- MENU -->
+    <nav id="main-menu" class="fixed inset-0 z-40 hidden flex flex-col items-center justify-center gap-8 bg-black/95">
+        <a href="../index.html" class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50">
+            Home
+        </a>
+
+        <a href="../pages/photography.html"
+            class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50">
+            Photography
+        </a>
+
+        <a href="../pages/dev.html" class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50">
+            Dev
+        </a>
+
+        <a href="../pages/contact.html" class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50">
+            Contact
+        </a>
+    </nav>
+
 
     <!-- Main Section -->
-    <main class="container">
+    <main>
+         <!-- rolagem vertical  -->
+        <div id="gallery-container" class="h-screen w-full overflow-y-scroll snap-y snap-mandatory" >
+            
+            <!-- Controla uma galeria -->
+            <section id="natureza" class="gallery h-screen w-full snap-start">
+                
+                <!-- Controla a rolagem horizontal -->
+                <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
+                    
+                    <img src="../assets/galeria/natureza/foto-02.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
 
-        <section class="hero">
-            <img class="bg" src="../assets/img/24.JPG" alt="">
-            <div class="content">
-                <h1>Página em<br> Construção </h1>
-                <p>
-                    Entre código e imagem, essa parte ainda está tomando forma.</p>
-                <a href="../index.html" class="btn">Voltar para a Home</a>
-            </div>
-        </section>
+                    <img src="../assets/galeria/natureza/foto-01.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+                
+                </div>      
+            </section>
+
+            <section id="macro" class="gallery h-screen w-full snap-start">
+                
+                <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
+                    
+                    <img src="../assets/galeria/macro/foto-01.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+               
+                    <img src="../assets/galeria/macro/foto-02.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+
+                </div>                
+            </section>
+
+            <section id="pb" class="gallery h-screen w-full snap-start">
+                
+                <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
+                    
+                    <img src="../assets/galeria/pb/foto-01.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+               
+                    <img src="../assets/galeria/pb/foto-02.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+
+                </div>                
+            </section>
+
+            <section id="esportes" class="gallery h-screen w-full snap-start">
+                
+                <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
+                    
+                    <img src="../assets/galeria/esportes/foto-01.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+               
+                    <img src="../assets/galeria/esportes/foto-02.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+
+                </div>
+            </section>
+
+            <section id="jornalismo" class="gallery h-screen w-full snap-start">
+                
+                <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
+                    
+                    <img src="../assets/galeria/jornalismo/foto-01.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+               
+                    <img src="../assets/galeria/jornalismo/foto-02.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+
+                </div>
+            </section>
+
+            <section id="autoral" class="gallery h-screen w-full snap-start">
+                
+                <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
+                    
+                    <img src="../assets/galeria/autoral/foto-01.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+               
+                    <img src="../assets/galeria/autoral/foto-02.jpg" alt="Descrição da fotografia"
+                    class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+
+                </div>
+            </section>
+            
+        </div>
     </main>
 
 
-
-    <!-- FOOTER -->
-    <footer class="footer_container">
-        <h3>Paulo Fischer</h3>
-        <p class="footer_cta">Gostou do que viu?<br>Vamos contruir algo?<br> Siga nos nas redes sociais!</p>
-        <div class="footer_social_media">
-            <a href=""><img src="../assets/icons/icon_instagram.png" alt="atalho link instagram"></a>
-            <a href=""><img src="../assets/icons/icon_github.png" alt="atalho link github"></a>
-            <a href=""><img src="../assets/icons/icon_whatsapp.png" alt="atalho link whatsapp"></a>
-        </div>
-
-        
-        <div class="footer_nav">
-            <h4 class="nav_title">Navegate</h4>
-            <a href="../index.html">home</a>
-            <a href="../pages/photography.html">photo</a>
-            <a href="../pages/dev.html">dev</a>
-            <a href="../pages/contact.html">contact</a>
-        </div>
-
-        <div class="footer_nav">
-            <h4 class="nav_title">Galery</h4>
-            <a href="">nature</a>
-            <a href="">macro</a>
-            <a href="">esportes</a>
-            <a href="">jornalismo</a>
-        </div>
-
-        <div class="footer_nav">
-            <h4 class="nav_title">Projects</h4>
-            <a href="">Calculadora Básica</a>
-            <a href="">Site Fretou</a>
-            <a href="">Game Animado Princesa</a>
-            <a href="">Carrossel Animado</a>
-        </div>
-
-        <div class="copyrights">
-            <h5>&copy; Paulo Fischer - Todos os direitos reservados.</h5>
-        </div>
-    </footer>
-
-    <script src="../js/main.js"></script>
+    <script src="../js/photography.js"></script>
 </body>
+
 </html>
