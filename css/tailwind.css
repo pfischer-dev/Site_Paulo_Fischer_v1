@@ -592,16 +592,40 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   inset: 0px;
+}
+
+.bottom-64 {
+  bottom: 16rem;
 }
 
 .left-0 {
   left: 0px;
 }
 
+.left-5 {
+  left: 1.25rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-1\/2 {
+  top: 50%;
 }
 
 .z-40 {
@@ -610,6 +634,14 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-\[-30px\] {
+  margin-top: -30px;
 }
 
 .flex {
@@ -632,8 +664,21 @@ video {
   width: 100%;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
+.flex-none {
+  flex: none;
+}
+
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .snap-x {
@@ -656,6 +701,14 @@ video {
   flex-direction: column;
 }
 
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -672,6 +725,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -680,8 +737,8 @@ video {
   overflow-x: auto;
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-y-scroll {
@@ -692,13 +749,8 @@ video {
   scroll-behavior: smooth;
 }
 
-.bg-black\/95 {
-  background-color: rgb(0 0 0 / 0.95);
-}
-
-.bg-blue-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1));
+.bg-black\/50 {
+  background-color: rgb(0 0 0 / 0.5);
 }
 
 .bg-red-500 {
@@ -706,169 +758,9 @@ video {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
-.object-right {
-  -o-object-position: right;
-     object-position: right;
-}
-
-.object-left {
-  -o-object-position: left;
-     object-position: left;
-}
-
-.object-\[70\%_center\] {
-  -o-object-position: 70% center;
-     object-position: 70% center;
-}
-
-.object-\[30\%_center\] {
-  -o-object-position: 30% center;
-     object-position: 30% center;
-}
-
-.object-\[40\%_center\] {
-  -o-object-position: 40% center;
-     object-position: 40% center;
-}
-
-.object-\[50\%_center\] {
-  -o-object-position: 50% center;
-     object-position: 50% center;
-}
-
-.object-\[45\%_center\] {
-  -o-object-position: 45% center;
-     object-position: 45% center;
-}
-
-.object-\[60\%_center\] {
-  -o-object-position: 60% center;
-     object-position: 60% center;
-}
-
-.object-\[\%_center\] {
-  -o-object-position: % center;
-     object-position: % center;
-}
-
-.object-\[75\%_center\] {
-  -o-object-position: 75% center;
-     object-position: 75% center;
-}
-
-.object-\[85\%_center\] {
-  -o-object-position: 85% center;
-     object-position: 85% center;
-}
-
-.object-\[20\%_center\] {
-  -o-object-position: 20% center;
-     object-position: 20% center;
-}
-
-.object-\[90\%_center\] {
-  -o-object-position: 90% center;
-     object-position: 90% center;
-}
-
-.object-\[30\%_70\] {
-  -o-object-position: 30% 70;
-     object-position: 30% 70;
-}
-
-.object-\[30\%_70\%\] {
-  -o-object-position: 30% 70%;
-     object-position: 30% 70%;
-}
-
-.object-\[40\%_70\%\] {
-  -o-object-position: 40% 70%;
-     object-position: 40% 70%;
-}
-
-.object-\[40\%_50\%\] {
-  -o-object-position: 40% 50%;
-     object-position: 40% 50%;
-}
-
-.object-\[40\%_30\%\] {
-  -o-object-position: 40% 30%;
-     object-position: 40% 30%;
-}
-
-.object-\[40\%_10\%\] {
-  -o-object-position: 40% 10%;
-     object-position: 40% 10%;
-}
-
-.object-\[40\%_90\%\] {
-  -o-object-position: 40% 90%;
-     object-position: 40% 90%;
-}
-
-.object-\[40\%_60\%\] {
-  -o-object-position: 40% 60%;
-     object-position: 40% 60%;
-}
-
-.object-\[40\%_80\%\] {
-  -o-object-position: 40% 80%;
-     object-position: 40% 80%;
-}
-
-.object-\[40\%_100\%\] {
-  -o-object-position: 40% 100%;
-     object-position: 40% 100%;
-}
-
-.object-\[45\%_10\%\] {
-  -o-object-position: 45% 10%;
-     object-position: 45% 10%;
-}
-
-.object-\[42\%_10\%\] {
-  -o-object-position: 42% 10%;
-     object-position: 42% 10%;
-}
-
-.object-\[350\%_center\] {
-  -o-object-position: 350% center;
-     object-position: 350% center;
-}
-
-.object-\[35\%_center\] {
-  -o-object-position: 35% center;
-     object-position: 35% center;
-}
-
-.object-\[30\%_10\%\] {
-  -o-object-position: 30% 10%;
-     object-position: 30% 10%;
-}
-
-.object-\[20\%_10\%\] {
-  -o-object-position: 20% 10%;
-     object-position: 20% 10%;
-}
-
-.object-\[60\%_10\%\] {
-  -o-object-position: 60% 10%;
-     object-position: 60% 10%;
 }
 
 .object-\[0\%_10\%\] {
@@ -876,34 +768,9 @@ video {
      object-position: 0% 10%;
 }
 
-.object-\[80\%_10\%\] {
-  -o-object-position: 80% 10%;
-     object-position: 80% 10%;
-}
-
-.object-\[80\%_50\%\] {
-  -o-object-position: 80% 50%;
-     object-position: 80% 50%;
-}
-
-.object-\[80\%_0\%\] {
-  -o-object-position: 80% 0%;
-     object-position: 80% 0%;
-}
-
 .object-\[10\%_10\%\] {
   -o-object-position: 10% 10%;
      object-position: 10% 10%;
-}
-
-.object-\[50\%_10\%\] {
-  -o-object-position: 50% 10%;
-     object-position: 50% 10%;
-}
-
-.object-\[90\%_10\%\] {
-  -o-object-position: 90% 10%;
-     object-position: 90% 10%;
 }
 
 .object-\[100\%_10\%\] {
@@ -911,19 +778,14 @@ video {
      object-position: 100% 10%;
 }
 
+.object-\[18\%_10\%\] {
+  -o-object-position: 18% 10%;
+     object-position: 18% 10%;
+}
+
 .object-\[2\%_10\%\] {
   -o-object-position: 2% 10%;
      object-position: 2% 10%;
-}
-
-.object-\[22\%_10\%\] {
-  -o-object-position: 22% 10%;
-     object-position: 22% 10%;
-}
-
-.object-\[25\%_10\%\] {
-  -o-object-position: 25% 10%;
-     object-position: 25% 10%;
 }
 
 .object-\[28\%_10\%\] {
@@ -931,259 +793,19 @@ video {
      object-position: 28% 10%;
 }
 
-.object-\[28\%_30\%\] {
-  -o-object-position: 28% 30%;
-     object-position: 28% 30%;
-}
-
-.object-\[28\%_90\%\] {
-  -o-object-position: 28% 90%;
-     object-position: 28% 90%;
-}
-
 .object-\[35\%_10\%\] {
   -o-object-position: 35% 10%;
      object-position: 35% 10%;
 }
 
-.object-\[33\%_10\%\] {
-  -o-object-position: 33% 10%;
-     object-position: 33% 10%;
+.object-\[40\%_10\%\] {
+  -o-object-position: 40% 10%;
+     object-position: 40% 10%;
 }
 
-.object-\[44\%_10\%\] {
-  -o-object-position: 44% 10%;
-     object-position: 44% 10%;
-}
-
-.object-\[43\%_10\%\] {
-  -o-object-position: 43% 10%;
-     object-position: 43% 10%;
-}
-
-.object-\[41\%_10\%\] {
-  -o-object-position: 41% 10%;
-     object-position: 41% 10%;
-}
-
-.object-\[62\%_10\%\] {
-  -o-object-position: 62% 10%;
-     object-position: 62% 10%;
-}
-
-.object-\[55\%_10\%\] {
-  -o-object-position: 55% 10%;
-     object-position: 55% 10%;
-}
-
-.object-\[53\%_10\%\] {
-  -o-object-position: 53% 10%;
-     object-position: 53% 10%;
-}
-
-.object-\[58\%_10\%\] {
-  -o-object-position: 58% 10%;
-     object-position: 58% 10%;
-}
-
-.object-\[60\%_30\%\] {
-  -o-object-position: 60% 30%;
-     object-position: 60% 30%;
-}
-
-.object-\[60\%_90\%\] {
-  -o-object-position: 60% 90%;
-     object-position: 60% 90%;
-}
-
-.object-\[62\%_center\] {
-  -o-object-position: 62% center;
-     object-position: 62% center;
-}
-
-.object-\[58\%_center\] {
-  -o-object-position: 58% center;
-     object-position: 58% center;
-}
-
-.object-\[68\%_10\%\] {
-  -o-object-position: 68% 10%;
-     object-position: 68% 10%;
-}
-
-.object-\[78\%_10\%\] {
-  -o-object-position: 78% 10%;
-     object-position: 78% 10%;
-}
-
-.object-\[\%_10\%\] {
-  -o-object-position: % 10%;
-     object-position: % 10%;
-}
-
-.object-\[\] {
-  -o-object-position: ;
-     object-position: ;
-}
-
-.object-\[\+\] {
-  -o-object-position: +;
-     object-position: +;
-}
-
-.object-\[10\%_right\] {
-  -o-object-position: 10% right;
-     object-position: 10% right;
-}
-
-.object-\[55_right\] {
-  -o-object-position: 55 right;
-     object-position: 55 right;
-}
-
-.object-\[5\%_right\] {
-  -o-object-position: 5% right;
-     object-position: 5% right;
-}
-
-.object-\[right\] {
-  -o-object-position: right;
-     object-position: right;
-}
-
-.object-\[right_5\%\] {
-  -o-object-position: right 5%;
-     object-position: right 5%;
-}
-
-.object-\[right_10\%\] {
-  -o-object-position: right 10%;
-     object-position: right 10%;
-}
-
-.object-\[right_0\%\] {
-  -o-object-position: right 0%;
-     object-position: right 0%;
-}
-
-.object-\[right_30\%\] {
-  -o-object-position: right 30%;
-     object-position: right 30%;
-}
-
-.object-\[right_50\%\] {
-  -o-object-position: right 50%;
-     object-position: right 50%;
-}
-
-.object-\[50\%right\] {
-  -o-object-position: 50%right;
-     object-position: 50%right;
-}
-
-.object-\[50right\] {
-  -o-object-position: 50right;
-     object-position: 50right;
-}
-
-.object-\[50\%_right\] {
-  -o-object-position: 50% right;
-     object-position: 50% right;
-}
-
-.object-\[right_\] {
-  -o-object-position: right;
-     object-position: right;
-}
-
-.object-\[center_\] {
-  -o-object-position: center;
-     object-position: center;
-}
-
-.object-\[center_20\] {
-  -o-object-position: center 20;
-     object-position: center 20;
-}
-
-.object-\[center_20\%\] {
-  -o-object-position: center 20%;
-     object-position: center 20%;
-}
-
-.object-\[center_80\%\] {
-  -o-object-position: center 80%;
-     object-position: center 80%;
-}
-
-.object-\[42_80\%\] {
-  -o-object-position: 42 80%;
-     object-position: 42 80%;
-}
-
-.object-\[42\%_80\%\] {
-  -o-object-position: 42% 80%;
-     object-position: 42% 80%;
-}
-
-.object-\[90\%_80\%\] {
-  -o-object-position: 90% 80%;
-     object-position: 90% 80%;
-}
-
-.object-\[80\%_80\%\] {
-  -o-object-position: 80% 80%;
-     object-position: 80% 80%;
-}
-
-.object-\[70\%_80\%\] {
-  -o-object-position: 70% 80%;
-     object-position: 70% 80%;
-}
-
-.object-\[100\%_80\%\] {
-  -o-object-position: 100% 80%;
-     object-position: 100% 80%;
-}
-
-.object-\[\%_80\%\] {
-  -o-object-position: % 80%;
-     object-position: % 80%;
-}
-
-.object-\[85\%_80\%\] {
-  -o-object-position: 85% 80%;
-     object-position: 85% 80%;
-}
-
-.object-\[85\%_10\%\] {
-  -o-object-position: 85% 10%;
-     object-position: 85% 10%;
-}
-
-.object-\[75\%_10\%\] {
-  -o-object-position: 75% 10%;
-     object-position: 75% 10%;
-}
-
-.object-\[5\%_10\%\] {
-  -o-object-position: 5% 10%;
-     object-position: 5% 10%;
-}
-
-.object-\[72\%_10\%\] {
-  -o-object-position: 72% 10%;
-     object-position: 72% 10%;
-}
-
-.object-\[82\%_10\%\] {
-  -o-object-position: 82% 10%;
-     object-position: 82% 10%;
-}
-
-.object-\[70\%_10\%\] {
-  -o-object-position: 70% 10%;
-     object-position: 70% 10%;
+.object-\[42\%_10\%\] {
+  -o-object-position: 42% 10%;
+     object-position: 42% 10%;
 }
 
 .object-\[48\%_10\%\] {
@@ -1191,24 +813,54 @@ video {
      object-position: 48% 10%;
 }
 
-.object-\[76\%_10\%\] {
-  -o-object-position: 76% 10%;
-     object-position: 76% 10%;
+.object-\[5\%_10\%\] {
+  -o-object-position: 5% 10%;
+     object-position: 5% 10%;
 }
 
-.object-\[9-\%_10\%\] {
-  -o-object-position: 9-% 10%;
-     object-position: 9-% 10%;
+.object-\[50\%_10\%\] {
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
 }
 
-.object-\[18\%_10\%\] {
-  -o-object-position: 18% 10%;
-     object-position: 18% 10%;
+.object-\[58\%_10\%\] {
+  -o-object-position: 58% 10%;
+     object-position: 58% 10%;
 }
 
-.object-\[92\%_10\%\] {
-  -o-object-position: 92% 10%;
-     object-position: 92% 10%;
+.object-\[58\%_center\] {
+  -o-object-position: 58% center;
+     object-position: 58% center;
+}
+
+.object-\[70\%_10\%\] {
+  -o-object-position: 70% 10%;
+     object-position: 70% 10%;
+}
+
+.object-\[75\%_10\%\] {
+  -o-object-position: 75% 10%;
+     object-position: 75% 10%;
+}
+
+.object-\[78\%_10\%\] {
+  -o-object-position: 78% 10%;
+     object-position: 78% 10%;
+}
+
+.object-\[82\%_10\%\] {
+  -o-object-position: 82% 10%;
+     object-position: 82% 10%;
+}
+
+.object-\[85\%_80\%\] {
+  -o-object-position: 85% 80%;
+     object-position: 85% 80%;
+}
+
+.object-\[90\%_10\%\] {
+  -o-object-position: 90% 10%;
+     object-position: 90% 10%;
 }
 
 .object-\[95\%_10\%\] {
@@ -1240,6 +892,14 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-\[5rem\] {
+  font-size: 5rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1248,6 +908,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-none {
@@ -1265,6 +929,14 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .transition-opacity {
