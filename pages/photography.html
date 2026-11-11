@@ -1,5 +1,5 @@
 <!-- npm run build:css -->
- <!-- npm run build:css -- --watch -->
+<!-- npm run build:css -- --watch -->
 
 <!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
@@ -22,20 +22,23 @@
 <body class="h-screen">
     <!-- HEADER -->
     <header class="fixed top-1 left-1 z-50 flex w-full items-center justify-between px-6 py-6 md:px-12 text-white">
-        <a href="../index.html" class="font-['Playfair_Display'] text-[1.5rem] tracking-wide md:text-2xl [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+        <a href="../index.html"
+            class="font-['Playfair_Display'] text-[1.5rem] tracking-wide md:text-2xl [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
             Paulo Fischer
         </a>
 
         <button id="menu-toggle" type="button" aria-label="Abrir Menu" aria-expanded="true" aria-controls="main-menu"
             class="flex items-center gap-3 text-sm tracking-[0.2em] transition-opacity hover:opacity-60">
-            <span id="menu-label">Menu</span>
+
             <span id="menu-icon" class="text-[2rem] leading-none [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">☰</span>
         </button>
     </header>
 
     <!-- MENU -->
-    <nav id="main-menu" class="fixed inset-0 z-40 hidden flex flex-col items-center justify-center gap-20 bg-black/50 text-white">
-        <a href="../index.html" class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+    <nav id="main-menu"
+        class="fixed inset-0 z-40 hidden flex flex-col items-center justify-center gap-20 bg-black/50 text-white">
+        <a href="../index.html"
+            class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
             Home
         </a>
 
@@ -44,11 +47,13 @@
             Photography
         </a>
 
-        <a href="../pages/dev.html" class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+        <a href="../pages/dev.html"
+            class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
             Dev
         </a>
 
-        <a href="../pages/contact.html" class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+        <a href="../pages/contact.html"
+            class="font-['Playfair_Display'] text-3xl transition-opacity hover:opacity-50 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
             Contact
         </a>
     </nav>
@@ -61,199 +66,364 @@
 
             <!-- Controla uma galeria -->
             <section id="nature" class="gallery h-screen w-full snap-start relative">
-
-                <!-- Controla a rolagem horizontal -->
                 <div class="flex flex-nowrap h-full w-full overflow-x-auto snap-x snap-mandatory">
 
-                    <img src="../assets/galeria/natureza/foto-02.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full flex-none object-cover object-[0%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/natureza/foto-02.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[0%_10%]">
+                        <figcaption class="empty:hidden sr-only shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Vale do Paty, Chapada Diamantina, BA - foto: Paulo Fischer | © Todos os Direitos Reservados 
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/natureza/foto-01.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full flex-none object-cover object-[10%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/natureza/foto-01.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[10%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Vale do Paty, Chapada Diamantina, BA - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/natureza/foto-03.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full flex-none object-cover object-[42%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/natureza/foto-03.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[42%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Barra do Una - Peruibe, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/natureza/foto-04.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full flex-none object-cover object-[42%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/natureza/foto-04.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[42%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Cachoeirão - Vale do Paty - Chapada Diamantina, BA - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/natureza/foto-05.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full flex-none object-cover object-[100%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/natureza/foto-05.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[100%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Morro Saca Trapo - Jalapão, TO - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
                 </div>
 
                 <div class="relative">
                     <div class="gallery-info text-white absolute bottom-28 left-5">
                         <span class="text-[1.5rem] mb-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">photography</span>
-                        <h2 class="text-white text-[5rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">[NATURE]</h2>
-                    </div>  
+                        <h2
+                            class="text-white text-[5rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+                            [NATURE]</h2>
+                    </div>
                 </div>
-
-
             </section>
+
 
             <section id="macro" class="gallery h-screen w-full snap-start">
-
                 <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
 
-                    <img src="../assets/galeria/macro/foto-03.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/macro/foto-03.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[42%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Mosca-da-flor (Família Syrphidae) - género Toxomerus, Piracaia, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/macro/foto-02.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[40%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/macro/foto-02.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[40%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Diptera Muscidae - Piracaia, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/macro/foto-04.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[58%_center] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/macro/foto-04.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[58%_center]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
 
-                    <img src="../assets/galeria/macro/foto-05.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[78%_10%] snap-start">
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/macro/foto-06.jpg" alt="Descrição da fotografia"
-                    class="h-full w-full shrink-0 object-cover object-[90%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/macro/foto-05.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[78%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm"></figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/macro/foto-07.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[28%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/macro/foto-06.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[90%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm"></figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/macro/foto-01.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[42%_90%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/macro/foto-07.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[28%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm"></figcaption>
+                    </figure>
+
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/macro/foto-01.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[42%_90%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm"></figcaption>
+                    </figure>
 
                 </div>
 
                 <div class="relative">
                     <div class="gallery-info text-white absolute bottom-28 left-5">
                         <span class="text-[2rem] mb-0 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">photography</span>
-                        <h2 class="text-white text-[4rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">[MACRO]</h2>
+                        <h2
+                            class="text-white text-[4rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+                            [MACRO]</h2>
                     </div>
                 </div>
-
             </section>
+
 
             <section id="pb" class="gallery h-screen w-full snap-start">
-
                 <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
 
-                    <img src="../assets/galeria/pb/foto-01.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[85%_80%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/pb/foto-01.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[85%_80%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Música para quem quer ouvir" - João Pessoa, PB - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/pb/foto-02.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[90%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/pb/foto-02.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[90%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Sofrência" - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/pb/foto-03.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[75%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/pb/foto-03.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[75%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Feliz em te ver" - Paranapiacaba, Santo André - SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/pb/foto-04.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[5%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/pb/foto-04.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[5%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Momentos para Pensar, Queria uma escala 5 x 2" - João Pessoa, PB - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/pb/foto-05.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[82%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/pb/foto-05.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[82%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Seguraaaa" - Jungle Fight - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
                 </div>
-                
+
                 <div class="relative">
                     <div class="gallery-info text-white absolute bottom-28 left-5">
                         <span class="text-[2rem] mb-0 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">photography</span>
-                        <h2 class="text-white text-[5rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">[P&B]</h2>
+                        <h2
+                            class="text-white text-[5rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+                            [P&B]</h2>
                     </div>
                 </div>
-
             </section>
 
-            <section id="sports" class="gallery h-screen w-full snap-start">
 
+            <section id="sports" class="gallery h-screen w-full snap-start">
                 <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
 
-                    <img src="../assets/galeria/esportes/foto-01.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/esportes/foto-01.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[42%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Goleiro Cássio (Corinthians) - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/esportes/foto-02.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[70%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/esportes/foto-02.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[70%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Copa do Mundo de Judô - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/esportes/foto-03.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/esportes/foto-03.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[42%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Copa do Mundo de Judô - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/esportes/foto-04.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[58%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/esportes/foto-04.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[58%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Atletismo - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados - 
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/esportes/foto-05.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[2%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/esportes/foto-05.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[2%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Brasil Open - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/esportes/foto-06.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[2%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/esportes/foto-06.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[2%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            Brasil Open - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
                 </div>
 
                 <div class="relative">
                     <div class="gallery-info text-white absolute bottom-10 left-20">
-                        <span class="text-[clamp(1.5rem,5vw,2.3rem)] mb-0 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">photography</span>
-                        <h2 class="text-white text-[4rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">[SPORTS]</h2>
+                        <span
+                            class="text-[clamp(1.5rem,5vw,2.3rem)] mb-0 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">photography</span>
+                        <h2
+                            class="text-white text-[4rem] mt-[-25px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+                            [SPORTS]</h2>
                     </div>
                 </div>
-
             </section>
 
-            <section id="journalism" class="gallery h-screen w-full snap-start">
 
+            <section id="journalism" class="gallery h-screen w-full snap-start">
                 <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
 
-                    <img src="../assets/galeria/jornalismo/foto-01.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[48%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/jornalismo/foto-01.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[48%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Dia-a-Dia do Paulistano" - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/jornalismo/foto-02.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[70%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/jornalismo/foto-02.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[70%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Alegrias sem Limites" - Carnaval, São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/jornalismo/foto-03.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[42%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/jornalismo/foto-03.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[42%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Sede" - Represa Cantareira, Bragança Paulista, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/jornalismo/foto-04.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[18%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/jornalismo/foto-04.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[18%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Meu primeiro Gás Lacrimogênio", Manifestação Camelôs - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
                 </div>
 
                 <div class="relative flex">
                     <div class="gallery-info text-white absolute left-5 bottom-5">
                         <span class="text-[1.5rem] [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">photography</span>
-                        <h2 class="text-white text-[52px] mt-[-20px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">[JOURNALISM]</h2>
+                        <h2
+                            class="text-white text-[52px] mt-[-20px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+                            [JOURNALISM]</h2>
                     </div>
                 </div>
-
             </section>
 
-            <section id="autoral" class="gallery h-screen w-full snap-start">
 
+            <section id="autoral" class="gallery h-screen w-full snap-start">
                 <div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory">
 
-                    <img src="../assets/galeria/autoral/foto-01.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[50%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/autoral/foto-02.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[35%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Aventuras de Cicloturismo pelo Brasil" - Vale do Rio Doce, MG - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/autoral/foto-02.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[35%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/autoral/foto-01.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[50%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Pássaros de Relance" - Serra da Canastra, MG - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/autoral/foto-03.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[75%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/autoral/foto-03.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[75%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Só Deus Sabe!" - São Paulo, SP - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
-                    <img src="../assets/galeria/autoral/foto-04.jpg" alt="Descrição da fotografia"
-                        class="h-full w-full shrink-0 object-cover object-[95%_10%] snap-start">
+                    <figure class="flex flex-col flex-none h-full w-full snap-start">
+                        <img src="../assets/galeria/autoral/foto-04.jpg" alt="Descrição da fotografia"
+                            class="min-h-0 flex-1 w-full object-cover object-[95%_10%]">
+                        <figcaption class="empty:hidden shrink-0 bg-black/80 text-white px-4 py-2 text-sm">
+                            "Aventuras de Cicloturismo pelo Brasil" - Cumuruxatiba, BA - foto: Paulo Fischer | © Todos os Direitos Reservados
+                        </figcaption>
+                    </figure>
 
                 </div>
 
                 <div class="relative">
                     <div class="gallery-info text-white absolute bottom-10 left-14">
                         <span class="text-[2rem] mb-0 [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">photography</span>
-                        <h2 class="text-white text-[3.5rem] mt-[-20px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">[AUTORAL]</h2>
+                        <h2
+                            class="text-white text-[3.5rem] mt-[-20px] opacity-90 font-semibold [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+                            [AUTORAL]</h2>
                     </div>
                 </div>
-
             </section>
 
+
         </div>
-        <nav id="gallery-nav" class="fixed top-2/4 right-6 -translate-y-1/2 z-40 flex flex-col items-end gap-5 text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
-           <a href="#nature" class="text-xl opacity-60 cursor-pointer font-bold">nature</a>
+
+        <nav id="gallery-nav"
+            class="fixed top-2/4 right-6 -translate-y-1/2 z-40 flex flex-col items-end gap-5 text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.8)]">
+            <a href="#nature" class="text-xl opacity-60 cursor-pointer font-bold">nature</a>
             <a href="#macro" class="text-xl opacity-60 cursor-pointer">macro</a>
             <a href="#pb" class="text-xl opacity-60 cursor-pointer">p&b</a>
             <a href="#sports" class="text-xl opacity-60 cursor-pointer">sports</a>
             <a href="#journalism" class="text-xl opacity-60 cursor-pointer">journalism</a>
             <a href="#autoral" class="text-xl opacity-60 cursor-pointer">autoral</a>
         </nav>
+
+        <figure id="lightBox" class="fixed inset-0 flex flex-col justify-center  w-full 
+        p-4 bg-black/50 z-[100] opacity-0 invisible pointer-events-none transition-opacity duration-700">
+
+            <img id="lightBox-image" src="" alt="item foto" class="rounded-2xl">
+            <figcaption 
+                id="lightBox-caption"
+                class="text-white text-center mt-3">
+            </figcaption>
+
+        </figure>
     </main>
 
     <script src="../js/photography.js"></script>
