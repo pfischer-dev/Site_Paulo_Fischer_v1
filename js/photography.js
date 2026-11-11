@@ -8,10 +8,16 @@ menuToggle.addEventListener("click", () => {
     const menuAberto = menu.classList.toggle("hidden");
 
     menuToggle.setAttribute("aria-expanded", !menuAberto);
-
     menuIcon.textContent = menuAberto ? "☰" : "x";
     menuLabel.textContent = menuAberto ? "MENU" : "FECHAR";
+    document.body.classList.toggle('menu_open');
+    
+
+
+
 });
+
+
 
 
 
@@ -34,11 +40,12 @@ const observer = new IntersectionObserver((entries) => { //	Elementos que tivera
         if(entry.isIntersecting) {
             links.forEach(link => {
                 const active = link.href.endsWith(entry.target.id);
-
+                
                 link.classList.toggle("font-extrabold", active);
                 
+                link.classList.toggle("text-blue-500", active)
                 link.classList.toggle("opacity-100", active);
-                link.classList.toggle("opacity-70", !active);
+                link.classList.toggle("opacity-60", !active);
             })
             
         }

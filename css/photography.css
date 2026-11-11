@@ -1,0 +1,14 @@
+body.menu_open {
+    overflow: hidden;
+}
+
+body.menu_open .gallery-info,
+body.menu_open #gallery-nav {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body.menu_open #gallery-container {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+}

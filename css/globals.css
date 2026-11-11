@@ -10,7 +10,8 @@
     /* Font Sizes */
     --fs-hero-span: clamp(2rem, 4vw, 4rem);
     --fs-hero: clamp(4rem, 8vw, 8rem);
-    --fs-hero-button: clamp(1.4rem, 1.4vw, 3rem); /* 1.4rem */
+    --fs-hero-button: clamp(1.4rem, 1.4vw, 3rem);
+    /* 1.4rem */
     --fs-header-logo: clamp(1.5rem, 5vw, 2.3rem);
     --fs-header-nav: clamp(1.1rem, 2.6vw, 1.5rem);
     --fs-hub-title: clamp(1.8rem, 4vw, 3rem);
@@ -19,7 +20,7 @@
     --fs-about-span: clamp(1.4rem, 4vw, 3rem);
     --fs-text: clamp(1.1rem, 2.6vw, 1.7rem);
     --fs-footer-title: clamp(1.8rem, 2.7vw, 2.5rem);
-    
+
 }
 
 * {
@@ -37,9 +38,11 @@ html {
 body {
     color: #0D0D0D;
 }
+
 body.menu_open {
     overflow: hidden;
 }
+
 
 /*
 ====================================================
@@ -56,40 +59,46 @@ header {
     top: 0;
     transition: transform 1s ease;
     z-index: 2;
-    
+
     & .logo {
         margin: 2rem;
         color: var(--lightColor);
         font-family: var(--fontPrimary);
         font-weight: lighter;
-        font-size: var(--fs-header-logo); /* 1.5rem; */
+        font-size: var(--fs-header-logo);
+        /* 1.5rem; */
     }
 
     & .nav_bar {
         display: none;
-        position: absolute;
+        position: fixed;
+        inset: 0;
         width: 100%;
-        top: 100%;
-        height: 100%;
-        border-radius: 4px;
-        z-index: 10;
-        opacity: 2;
-        font-family: var(--fontSecondary);
+        height: 100vh;
+        z-index: 1;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        background-color: rgba(0, 0, 0, 0.4);
+        font-family: var(--fontPrimary);
         font-weight: lighter;
-        
+
         & a {
             display: flex;
             align-items: center;
-            justify-content: start;
-            font-size: var(--fs-header-nav);
-            padding: 2.8rem 1.5rem;
+            justify-content: center;
+            font-size: 30px;
+            padding: 1rem 1.5rem;
             color: white;
-            z-index: 2;
 
             &:hover {
                 color: rgb(65, 145, 232);
             }
         }
+
         & .line {
             width: 1px;
             height: 20px;
@@ -97,7 +106,7 @@ header {
             z-index: 99;
         }
     }
-    
+
     & .menu-toggle {
         border: none;
         background-color: transparent;
@@ -105,20 +114,23 @@ header {
         color: var(--lightColor);
         margin: 1rem;
         cursor: pointer;
+        position: relative;
+        z-index: 3;
     }
-    
+
+
     & .active {
-        display: block;
+        display: flex;
         font-size: 10rem;
         font-weight: 700;
-        
+
     }
-    
+
     & .close-toggle {
         display: none;
         font-family: var(--fontSecondary);
         font-size: 0.5rem;
-        
+
     }
 
     &.inactive {
@@ -144,9 +156,12 @@ header.hidden {
         height: auto;
         right: 0;
         top: 0;
-        font-size: clamp(1.4rem, 0.5vw, 2rem);   
+        font-size: clamp(1.4rem, 0.5vw, 2rem);
     }
-    header .menu-toggle {display: none;}
+
+    header .menu-toggle {
+        display: none;
+    }
 }
 
 /* Telas Grandes */
@@ -158,10 +173,14 @@ header.hidden {
         height: auto;
         right: 0;
         top: 0;
-        font-size: clamp(1.4rem, 0.5vw, 2rem);   
+        font-size: clamp(1.4rem, 0.5vw, 2rem);
     }
-    header .menu-toggle {display: none;}
+
+    header .menu-toggle {
+        display: none;
+    }
 }
+
 /* ==========FIM HEADER RESPONSIVE====================== */
 
 
@@ -185,17 +204,17 @@ header.hidden {
         transform: scale(0.8) translateX(-30px);
         pointer-events: none;
     }
-    
+
     div {
         display: flex;
         align-items: center;
-        
+
         gap: 1rem;
         transform: rotate(-90deg);
         transform-origin: left center;
         top: 0;
         background-color: transparent;
-    
+
         img {
             height: 25px;
             width: 25px;
@@ -206,32 +225,33 @@ header.hidden {
             left: 2px;
             width: 1px;
             height: 55px;
-            background-color:var(--lightColor);
+            background-color: var(--lightColor);
             flex-shrink: 0;
             align-self: center;
             gap: 1rem;
             margin: 0 clamp(8px, 2vw, 18px);
-            }
+        }
 
         h4 {
             color: var(--lightColor);
             font-weight: lighter;
         }
-    }   
+    }
 }
 
 /* ===== Aside Responsive ============================== */
 @media (min-width: 768px) {
     .hero-social {
         display: block;
-    } 
+    }
 }
+
 /* ===================================================== */
 /* ====================================================
                     SESSAO CONTACT 
 ==================================================== */
 .contact_container {
-    background: linear-gradient(to bottom,#0d0d0d,#050505);
+    background: linear-gradient(to bottom, #0d0d0d, #050505);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,12 +259,15 @@ header.hidden {
     padding: 2rem 1.8rem;
     min-height: 100vh;
     scroll-snap-align: start;
-    gap: 4rem; /*  */
+    gap: 4rem;
+
+    /*  */
     .contact_left {
         height: 100%;
         display: flex;
         flex-direction: column;
         gap: .5rem;
+
         .contact_whatsapp {
             width: 100%;
             display: flex;
@@ -257,9 +280,11 @@ header.hidden {
             margin-bottom: 1rem;
 
             p {
-                
-                font-size: clamp(2rem, 4vw, 7rem);/* clamp(2rem, 4vw, 5rem) */;
-            
+
+                font-size: clamp(2rem, 4vw, 7rem);
+                /* clamp(2rem, 4vw, 5rem) */
+                ;
+
             }
 
             img {
@@ -267,6 +292,7 @@ header.hidden {
                 height: 80px;
             }
         }
+
         .contact_form {
             width: 100%;
             max-height: 100%;
@@ -275,8 +301,8 @@ header.hidden {
             align-items: center;
             gap: 1rem;
             text-align: center;
-            
-            
+
+
             .form_name {
                 width: 100%;
                 height: 30px;
@@ -285,6 +311,7 @@ header.hidden {
                 background-color: rgba(128, 128, 128, 0.271);
                 color: var(--outlinerColor);
             }
+
             .form_email {
                 width: 100%;
                 height: 30px;
@@ -292,8 +319,9 @@ header.hidden {
                 border: 1px solid rgba(128, 128, 128, 0.595);
                 background-color: rgba(128, 128, 128, 0.271);
                 color: var(--outlinerColor);
-    
+
             }
+
             .form_mensagem {
                 width: 100%;
                 min-height: 100px;
@@ -301,8 +329,9 @@ header.hidden {
                 border: 1px solid rgba(128, 128, 128, 0.595);
                 background-color: rgba(128, 128, 128, 0.271);
                 color: var(--outlinerColor);
-    
+
             }
+
             .btn-whats {
                 width: 50%;
                 height: 30px;
@@ -310,12 +339,12 @@ header.hidden {
                 border: 1px solid rgba(128, 128, 128, 0.595);
                 background-color: rgba(128, 128, 128, 0.271);
                 color: var(--outlinerColor);
-                font-size: clamp(0.8rem , 0.8vw, 1.2rem);
+                font-size: clamp(0.8rem, 0.8vw, 1.2rem);
             }
         }
     }
 
-    
+
     .contact_right {
         display: flex;
         flex-direction: column;
@@ -332,8 +361,8 @@ header.hidden {
             align-items: center;
             justify-content: center;
             text-align: center;
-            
-            
+
+
             h2 {
                 font-size: clamp(1.85rem, 3.9vw, 5rem);
             }
@@ -345,14 +374,14 @@ header.hidden {
                 font-family: var(--fontSecondary);
             }
         }
-        
+
         .contact_links {
             width: 100%;
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             margin: 1.5rem 0;
-            
+
             img {
                 width: 50px;
                 height: 50px;
@@ -365,7 +394,7 @@ header.hidden {
         }
     }
 }
-        
+
 /* ====================================================
                     RESPONSIVE CONTACT
 ==================================================== */
@@ -390,17 +419,18 @@ header.hidden {
                 display: flex;
                 align-items: center;
                 gap: 2rem;
-                
+
                 p {
                     display: inline-block;
                 }
-                
+
                 img {
                     margin-left: 3rem;
                     width: 110px;
                     height: 110px;
                 }
             }
+
             .contact_form {
                 width: 80%;
                 height: 100%;
@@ -425,37 +455,38 @@ header.hidden {
                     font-size: 1rem;
 
                 }
+
                 .btn-whats {
                     min-width: 200px;
-                    height:40px;
+                    height: 40px;
                     font-size: 1.2rem;
-                    
+
 
 
                 }
             }
         }
+
         .contact_right {
             display: flex;
             flex-direction: column;
             width: 50%;
             gap: 4rem;
             justify-content: end;
-    
-            .contact_header {
-                
-            }
-            
+
+            .contact_header {}
+
         }
+
         .contact_links {
-            
-            a { 
+
+            a {
                 width: 60px;
                 height: 60px;
-                
+
             }
         }
-    } 
+    }
 }
 
 /* ====================================================
@@ -465,10 +496,10 @@ header.hidden {
     display: flex;
     flex-direction: column;
     font-family: var(--fontSecondary);
-    background: var(--footerColor);   
-    border-top: 1px solid rgba(255,255,255,0.08);
+    background: var(--footerColor);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     scroll-snap-align: start;
-    
+
     .footer_logo {
         font-size: var(--fs-footer-title);
         margin: 1rem 0 0 1rem;
@@ -491,6 +522,7 @@ header.hidden {
         margin: 1rem;
         width: 48%;
         grid-area: footer_social;
+
         & img {
             width: 35px;
             height: 35px;
@@ -512,7 +544,8 @@ header.hidden {
         }
 
         a {
-            font-size: clamp(0.8rem, 1vw, 1.7rem);/* 0.8rem */
+            font-size: clamp(0.8rem, 1vw, 1.7rem);
+            /* 0.8rem */
             line-height: 1.6;
             margin-top: 0.1rem;
             color: var(--lightColor);
@@ -520,16 +553,20 @@ header.hidden {
             opacity: 0.7;
 
         }
+
         &.col1 {
             grid-area: col1;
         }
+
         &.col2 {
             grid-area: col2;
         }
+
         &.col3 {
             grid-area: col3;
         }
     }
+
     .copyrights {
         margin: 1rem 0 0 1rem;
         color: var(--lightColor);
@@ -540,6 +577,7 @@ header.hidden {
         grid-area: copyrights;
     }
 }
+
 /* 
 ====================================================
                 RESPONSIVE FOOTER
@@ -555,10 +593,10 @@ header.hidden {
         display: grid;
         grid-template-columns: 300px 1fr 1fr 1fr;
         grid-template-areas: "footer_logo col1 col2 col3"
-                            "footer_cta col1 col2 col3"
-                            "footer_social col1 col2 col3"
-                            "copyrights col1 col2 col3";
-    }   
+            "footer_cta col1 col2 col3"
+            "footer_social col1 col2 col3"
+            "copyrights col1 col2 col3";
+    }
 }
 
 @media (min-width: 868px) and (max-width: 1024px) {
@@ -566,9 +604,9 @@ header.hidden {
         display: grid;
         grid-template-columns: 370px 1fr 1fr 1fr;
         grid-template-areas: "footer_logo col1 col2 col3"
-                            "footer_cta col1 col2 col3"
-                            "footer_social col1 col2 col3"
-                            "copyrights col1 col2 col3";
+            "footer_cta col1 col2 col3"
+            "footer_social col1 col2 col3"
+            "copyrights col1 col2 col3";
     }
 }
 
@@ -578,9 +616,8 @@ header.hidden {
         display: grid;
         grid-template-columns: 600px 1fr 1fr 1fr;
         grid-template-areas: "footer_logo col1 col2 col3"
-                            "footer_cta col1 col2 col3"
-                            "footer_social col1 col2 col3"
-                            "copyrights col1 col2 col3";
+            "footer_cta col1 col2 col3"
+            "footer_social col1 col2 col3"
+            "copyrights col1 col2 col3";
     }
 }
-
