@@ -35,10 +35,8 @@ const observer = new IntersectionObserver((entries) => { //	Elementos que tivera
             links.forEach(link => {
                 const active = link.href.endsWith(entry.target.id);
 
-                link.classList.toggle("font-bold", active);
-
+                link.classList.toggle("font-extrabold", active);
                 
-
                 link.classList.toggle("opacity-100", active);
                 link.classList.toggle("opacity-70", !active);
             })

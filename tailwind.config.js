@@ -5,7 +5,11 @@ module.exports = {
     "./pages/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
