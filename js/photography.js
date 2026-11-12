@@ -82,8 +82,7 @@ photos.forEach((photo) => {
         );
         document.body.classList.toggle("menu_open");
         
-        console.log(photo.src);
-        console.log(lightBoxImage);
+        
     });
     
 
@@ -105,3 +104,68 @@ lightBox.addEventListener("click", (event) => {
         }
         
     })
+
+/* ===================================================================== */
+//                      Marcadores Fotos Galeria
+//======================================================================= 
+const galerias = document.querySelectorAll("section");
+
+galerias.forEach(galeria => {
+    const indicadores = galeria.querySelector(".indicadores");
+    const todasFotosGaleria = galeria.querySelectorAll("img");
+    
+    for(let i = 0; i<todasFotosGaleria.length;i++){
+        const marcador = document.createElement("span");
+        indicadores.appendChild(marcador);
+        marcador.classList.add(
+            "w-4", 
+            "h-4",
+            "rounded-full", 
+            "bg-white", 
+            "inline-block", 
+            "opacity-60",
+            "transition-all",
+            "duration-300"
+        );
+    }
+
+    
+    const containerHorizontal = galeria.querySelector(".overflow-x-auto");
+    containerHorizontal.addEventListener("scroll", () => {
+        const indice = Math.round(containerHorizontal.scrollLeft / containerHorizontal.clientWidth);
+        const filhos = Array.from(indicadores.children);
+        
+        console.log("Scroll:", containerHorizontal.scrollLeft);
+        console.log("Índice:", indice);
+        console.log("Bolinha:", filhos[indice]);
+        
+        const cadaBola = filhos[indice];
+        
+        console.log("cada Bola:", cadaBola);
+
+        filhos.forEach((filho, posicao) => {
+           
+            if(posicao === indice) {
+                filho.classList.remove("opacity-60")
+                filho.classList.add("opacity-100", "scale-125")
+                
+            } else {
+                filho.classList.remove("opacity-100", "scale-125")
+                filho.classList.add("opacity-60")
+
+            }
+            
+            
+            
+        }) 
+        
+        
+            
+    })
+
+
+
+
+
+    
+})
