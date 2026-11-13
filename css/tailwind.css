@@ -816,6 +816,10 @@ video {
   scroll-snap-align: start;
 }
 
+.snap-always {
+  scroll-snap-stop: always;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -866,6 +870,10 @@ video {
 
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.overscroll-x-contain {
+  overscroll-behavior-x: contain;
 }
 
 .scroll-smooth {
@@ -1169,6 +1177,14 @@ video {
 
 .duration-700 {
   transition-duration: 700ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .\[text-shadow\:0_1px_4px_rgba\(0\2c 0\2c 0\2c 0\.8\)\] {
