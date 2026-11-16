@@ -684,6 +684,10 @@ video {
   z-index: 100;
 }
 
+.z-\[60\] {
+  z-index: 60;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -988,11 +992,6 @@ video {
      object-position: 95% 10%;
 }
 
-.object-\[48\%_0\%\] {
-  -o-object-position: 48% 0%;
-     object-position: 48% 0%;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -1181,15 +1180,36 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:scale-125 {
-    --tw-scale-x: 1.25;
-    --tw-scale-y: 1.25;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .lg\:inset-auto {
+    inset: auto;
   }
 
-  .lg\:object-\[0\%_0\%\] {
-    -o-object-position: 0% 0%;
-       object-position: 0% 0%;
+  .lg\:right-12 {
+    right: 3rem;
+  }
+
+  .lg\:top-8 {
+    top: 2rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
   }
 
   .lg\:object-\[0\%_10\%\] {
@@ -1247,74 +1267,9 @@ video {
        object-position: 0% 90%;
   }
 
-  .lg\:object-\[0\%_80\%\] {
-    -o-object-position: 0% 80%;
-       object-position: 0% 80%;
-  }
-
-  .lg\:object-\[0\%_70\%\] {
-    -o-object-position: 0% 70%;
-       object-position: 0% 70%;
-  }
-
-  .lg\:object-\[0\%_60\%\] {
-    -o-object-position: 0% 60%;
-       object-position: 0% 60%;
-  }
-
-  .lg\:object-\[50\%_100\%\] {
-    -o-object-position: 50% 100%;
-       object-position: 50% 100%;
-  }
-
-  .lg\:object-\[0\%_900\%\] {
-    -o-object-position: 0% 900%;
-       object-position: 0% 900%;
-  }
-
-  .lg\:object-\[48\%_10\%\] {
-    -o-object-position: 48% 10%;
-       object-position: 48% 10%;
-  }
-
-  .lg\:object-\[18\%_10\%\] {
-    -o-object-position: 18% 10%;
-       object-position: 18% 10%;
-  }
-
-  .lg\:object-\[18\%_100\%\] {
-    -o-object-position: 18% 100%;
-       object-position: 18% 100%;
-  }
-
-  .lg\:object-\[18\%_\%\] {
-    -o-object-position: 18% %;
-       object-position: 18% %;
-  }
-
-  .lg\:object-\[18\%_70\%\] {
-    -o-object-position: 18% 70%;
-       object-position: 18% 70%;
-  }
-
-  .lg\:object-\[18\%_78\%\] {
-    -o-object-position: 18% 78%;
-       object-position: 18% 78%;
-  }
-
-  .lg\:object-\[18\%_50\%\] {
-    -o-object-position: 18% 50%;
-       object-position: 18% 50%;
-  }
-
-  .lg\:object-\[18\%_60\%\] {
-    -o-object-position: 18% 60%;
-       object-position: 18% 60%;
-  }
-
-  .lg\:object-\[18\%_61\%\] {
-    -o-object-position: 18% 61%;
-       object-position: 18% 61%;
+  .lg\:object-\[100\%_60\%\] {
+    -o-object-position: 100% 60%;
+       object-position: 100% 60%;
   }
 
   .lg\:object-\[18\%_62\%\] {
@@ -1322,24 +1277,9 @@ video {
        object-position: 18% 62%;
   }
 
-  .lg\:object-\[18\%_55\%\] {
-    -o-object-position: 18% 55%;
-       object-position: 18% 55%;
-  }
-
-  .lg\:object-\[18\%_5\%\] {
-    -o-object-position: 18% 5%;
-       object-position: 18% 5%;
-  }
-
-  .lg\:object-\[18\%_57\%\] {
-    -o-object-position: 18% 57%;
-       object-position: 18% 57%;
-  }
-
-  .lg\:object-\[48\%_0\%\] {
-    -o-object-position: 48% 0%;
-       object-position: 48% 0%;
+  .lg\:object-\[42\%_0\%\] {
+    -o-object-position: 42% 0%;
+       object-position: 42% 0%;
   }
 
   .lg\:object-\[42\%_10\%\] {
@@ -1347,53 +1287,21 @@ video {
        object-position: 42% 10%;
   }
 
-  .lg\:object-\[42\%_0\%\] {
-    -o-object-position: 42% 0%;
-       object-position: 42% 0%;
-  }
-
-  .lg\:object-\[42\%_100\%\] {
-    -o-object-position: 42% 100%;
-       object-position: 42% 100%;
-  }
-
-  .lg\:object-\[42\%_50\%\] {
-    -o-object-position: 42% 50%;
-       object-position: 42% 50%;
-  }
-
-  .lg\:object-\[42\%_40\%\] {
-    -o-object-position: 42% 40%;
-       object-position: 42% 40%;
-  }
-
-  .lg\:object-\[42\%_20\%\] {
-    -o-object-position: 42% 20%;
-       object-position: 42% 20%;
-  }
-
-  .lg\:object-\[100\%_0\%\] {
-    -o-object-position: 100% 0%;
-       object-position: 100% 0%;
-  }
-
-  .lg\:object-\[100\%_40\%\] {
-    -o-object-position: 100% 40%;
-       object-position: 100% 40%;
-  }
-
-  .lg\:object-\[100\%_60\%\] {
-    -o-object-position: 100% 60%;
-       object-position: 100% 60%;
-  }
-
   .lg\:object-\[42\%_30\%\] {
     -o-object-position: 42% 30%;
        object-position: 42% 30%;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:object-\[48\%_0\%\] {
+    -o-object-position: 48% 0%;
+       object-position: 48% 0%;
+  }
+
+  .lg\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .lg\:text-\[2\.3rem\] {
+    font-size: 2.3rem;
   }
 }

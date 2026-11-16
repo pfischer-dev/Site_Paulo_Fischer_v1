@@ -151,11 +151,16 @@ header.hidden {
 @media (min-width: 768px) and (max-width: 1280px) {
     header .nav_bar {
         display: flex;
-        align-items: center;
-        justify-content: end;
+        position: static;
+        inset: auto;
+        width: auto;
         height: auto;
-        right: 0;
-        top: 0;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        background-color: transparent;
         font-size: clamp(1.4rem, 0.5vw, 2rem);
     }
 
@@ -168,11 +173,16 @@ header.hidden {
 @media (min-width: 1280px) {
     header .nav_bar {
         display: flex;
-        align-items: center;
-        justify-content: end;
+        position: static;
+        inset: auto;
+        width: auto;
         height: auto;
-        right: 0;
-        top: 0;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        background-color: transparent;
         font-size: clamp(1.4rem, 0.5vw, 2rem);
     }
 
