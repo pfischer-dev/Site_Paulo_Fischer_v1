@@ -52,7 +52,7 @@ galleries.forEach(gallery => {
 
 
 /* ===================================================================== */
-//                      Abrir Foto IndivIduaL
+//                      Light box - Abrir Foto IndivIduaL
 //======================================================================= 
 const lightBox = document.getElementById("lightBox");
 const lightBoxImage = document.getElementById("lightBox-image");
@@ -80,7 +80,7 @@ photos.forEach((photo) => {
             "visible",
             "pointer-events-auto",
         );
-        document.body.classList.toggle("menu_open");
+        document.body.classList.add("menu_open");
 
 
     });
@@ -88,22 +88,22 @@ photos.forEach((photo) => {
 
 })
 lightBox.addEventListener("click", (event) => {
-    if (event.target === lightBox) {
+    if (!lightBoxImage.contains(event.target)) {
         lightBox.classList.add(
             "opacity-0",
             "invisible",
             "pointer-events-none"
         );
+
         lightBox.classList.remove(
             "opacity-100",
             "visible",
             "pointer-events-auto"
-        )
+        );
 
         document.body.classList.remove("menu_open");
     }
-
-})
+});
 
 /* ===================================================================== */
 //                      Marcadores Fotos Galeria

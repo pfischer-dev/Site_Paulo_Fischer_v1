@@ -14,7 +14,12 @@ body {
 ==================================================== */
 
 .container {
+    transition: 0.3s ease;
     
+    &.blur {
+            filter: blur(10px);
+        }
+
     & .hero {
         position: relative;
         min-height: 100svh;
@@ -24,11 +29,7 @@ body {
         overflow: hidden;
         transition: 1.2s ease;
         scroll-snap-align: start;
-        &.blur {
-            filter: blur(10px);
-        }
-
-
+        
         & .hero_bg {
             position: absolute;
             inset: 0;
@@ -45,7 +46,7 @@ body {
             display: flex;
             flex-direction: column;
             position: absolute;
-            height: 65%;
+            height: 75%;
             width: 70%;
             z-index: 2;
             text-align: left;
@@ -90,7 +91,6 @@ body {
             }
         }
     }
-
 
 /* ===================================================== 
                             SESSAO STORYTELLING 

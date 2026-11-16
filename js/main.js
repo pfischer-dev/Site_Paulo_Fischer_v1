@@ -39,7 +39,7 @@ const menu = document.querySelector('.menu-toggle');
 const closeMenu = document.querySelector('.close-toggle')
 
 const nav = document.querySelector('.nav_bar');
-const blur = document.querySelector('.hero');
+const blur = document.querySelector('.container');
 
 menu.addEventListener('click', () => {
     nav.classList.toggle('active'); /* add a classe active em nav_bar */
