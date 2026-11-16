@@ -632,20 +632,12 @@ video {
   inset: 0px;
 }
 
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
 .bottom-16 {
   bottom: 4rem;
 }
 
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
+.bottom-28 {
+  bottom: 7rem;
 }
 
 .left-1 {
@@ -678,26 +670,6 @@ video {
 
 .top-2\/4 {
   top: 50%;
-}
-
-.bottom-28 {
-  bottom: 7rem;
-}
-
-.bottom-36 {
-  bottom: 9rem;
-}
-
-.bottom-48 {
-  bottom: 12rem;
-}
-
-.bottom-24 {
-  bottom: 6rem;
-}
-
-.bottom-2 {
-  bottom: 0.5rem;
 }
 
 .z-40 {
@@ -1016,6 +988,11 @@ video {
      object-position: 95% 10%;
 }
 
+.object-\[48\%_0\%\] {
+  -o-object-position: 48% 0%;
+     object-position: 48% 0%;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1042,10 +1019,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1179,14 +1152,6 @@ video {
   transition-duration: 700ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .\[text-shadow\:0_1px_4px_rgba\(0\2c 0\2c 0\2c 0\.8\)\] {
   text-shadow: 0 1px 4px rgba(0,0,0,0.8);
 }
@@ -1212,5 +1177,223 @@ video {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:scale-125 {
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:object-\[0\%_0\%\] {
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+
+  .lg\:object-\[0\%_10\%\] {
+    -o-object-position: 0% 10%;
+       object-position: 0% 10%;
+  }
+
+  .lg\:object-\[0\%_100\%\] {
+    -o-object-position: 0% 100%;
+       object-position: 0% 100%;
+  }
+
+  .lg\:object-\[0\%_18\%\] {
+    -o-object-position: 0% 18%;
+       object-position: 0% 18%;
+  }
+
+  .lg\:object-\[0\%_38\%\] {
+    -o-object-position: 0% 38%;
+       object-position: 0% 38%;
+  }
+
+  .lg\:object-\[0\%_40\%\] {
+    -o-object-position: 0% 40%;
+       object-position: 0% 40%;
+  }
+
+  .lg\:object-\[0\%_45\%\] {
+    -o-object-position: 0% 45%;
+       object-position: 0% 45%;
+  }
+
+  .lg\:object-\[0\%_48\%\] {
+    -o-object-position: 0% 48%;
+       object-position: 0% 48%;
+  }
+
+  .lg\:object-\[0\%_50\%\] {
+    -o-object-position: 0% 50%;
+       object-position: 0% 50%;
+  }
+
+  .lg\:object-\[0\%_68\%\] {
+    -o-object-position: 0% 68%;
+       object-position: 0% 68%;
+  }
+
+  .lg\:object-\[0\%_75\%\] {
+    -o-object-position: 0% 75%;
+       object-position: 0% 75%;
+  }
+
+  .lg\:object-\[0\%_90\%\] {
+    -o-object-position: 0% 90%;
+       object-position: 0% 90%;
+  }
+
+  .lg\:object-\[0\%_80\%\] {
+    -o-object-position: 0% 80%;
+       object-position: 0% 80%;
+  }
+
+  .lg\:object-\[0\%_70\%\] {
+    -o-object-position: 0% 70%;
+       object-position: 0% 70%;
+  }
+
+  .lg\:object-\[0\%_60\%\] {
+    -o-object-position: 0% 60%;
+       object-position: 0% 60%;
+  }
+
+  .lg\:object-\[50\%_100\%\] {
+    -o-object-position: 50% 100%;
+       object-position: 50% 100%;
+  }
+
+  .lg\:object-\[0\%_900\%\] {
+    -o-object-position: 0% 900%;
+       object-position: 0% 900%;
+  }
+
+  .lg\:object-\[48\%_10\%\] {
+    -o-object-position: 48% 10%;
+       object-position: 48% 10%;
+  }
+
+  .lg\:object-\[18\%_10\%\] {
+    -o-object-position: 18% 10%;
+       object-position: 18% 10%;
+  }
+
+  .lg\:object-\[18\%_100\%\] {
+    -o-object-position: 18% 100%;
+       object-position: 18% 100%;
+  }
+
+  .lg\:object-\[18\%_\%\] {
+    -o-object-position: 18% %;
+       object-position: 18% %;
+  }
+
+  .lg\:object-\[18\%_70\%\] {
+    -o-object-position: 18% 70%;
+       object-position: 18% 70%;
+  }
+
+  .lg\:object-\[18\%_78\%\] {
+    -o-object-position: 18% 78%;
+       object-position: 18% 78%;
+  }
+
+  .lg\:object-\[18\%_50\%\] {
+    -o-object-position: 18% 50%;
+       object-position: 18% 50%;
+  }
+
+  .lg\:object-\[18\%_60\%\] {
+    -o-object-position: 18% 60%;
+       object-position: 18% 60%;
+  }
+
+  .lg\:object-\[18\%_61\%\] {
+    -o-object-position: 18% 61%;
+       object-position: 18% 61%;
+  }
+
+  .lg\:object-\[18\%_62\%\] {
+    -o-object-position: 18% 62%;
+       object-position: 18% 62%;
+  }
+
+  .lg\:object-\[18\%_55\%\] {
+    -o-object-position: 18% 55%;
+       object-position: 18% 55%;
+  }
+
+  .lg\:object-\[18\%_5\%\] {
+    -o-object-position: 18% 5%;
+       object-position: 18% 5%;
+  }
+
+  .lg\:object-\[18\%_57\%\] {
+    -o-object-position: 18% 57%;
+       object-position: 18% 57%;
+  }
+
+  .lg\:object-\[48\%_0\%\] {
+    -o-object-position: 48% 0%;
+       object-position: 48% 0%;
+  }
+
+  .lg\:object-\[42\%_10\%\] {
+    -o-object-position: 42% 10%;
+       object-position: 42% 10%;
+  }
+
+  .lg\:object-\[42\%_0\%\] {
+    -o-object-position: 42% 0%;
+       object-position: 42% 0%;
+  }
+
+  .lg\:object-\[42\%_100\%\] {
+    -o-object-position: 42% 100%;
+       object-position: 42% 100%;
+  }
+
+  .lg\:object-\[42\%_50\%\] {
+    -o-object-position: 42% 50%;
+       object-position: 42% 50%;
+  }
+
+  .lg\:object-\[42\%_40\%\] {
+    -o-object-position: 42% 40%;
+       object-position: 42% 40%;
+  }
+
+  .lg\:object-\[42\%_20\%\] {
+    -o-object-position: 42% 20%;
+       object-position: 42% 20%;
+  }
+
+  .lg\:object-\[100\%_0\%\] {
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
+  }
+
+  .lg\:object-\[100\%_40\%\] {
+    -o-object-position: 100% 40%;
+       object-position: 100% 40%;
+  }
+
+  .lg\:object-\[100\%_60\%\] {
+    -o-object-position: 100% 60%;
+       object-position: 100% 60%;
+  }
+
+  .lg\:object-\[42\%_30\%\] {
+    -o-object-position: 42% 30%;
+       object-position: 42% 30%;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }

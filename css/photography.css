@@ -18,3 +18,37 @@ body.menu_open #gallery-container {
     filter: blur(4px);
     transition: filter 0.3s ease;
 }
+
+
+
+/* Responsividade Desktop */
+@media (min-width: 1024px) {
+
+    /* Tipografia */
+    .gallery-info span {
+        font-size: clamp(2rem, 2.5vw, 3rem);
+    }
+
+    .gallery-info h2 {
+        font-size: clamp(5rem, 6vw, 7rem);
+    }
+
+    /* Navegação lateral */
+    #gallery-nav a {
+        font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+    }
+
+    /* Fotos horizontais */
+    .foto-horizontal-nature {
+        
+
+        
+    }
+
+    /* Fotos verticais */
+    .foto-vertical-nature {
+        object-fit: cover;
+    }
+
+}
+
