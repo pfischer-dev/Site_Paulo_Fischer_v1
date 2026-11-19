@@ -672,6 +672,34 @@ video {
   top: 50%;
 }
 
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-7 {
+  bottom: 1.75rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -728,6 +756,10 @@ video {
   height: 0.75rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -736,8 +768,16 @@ video {
   height: 100vh;
 }
 
-.h-auto {
-  height: auto;
+.h-4 {
+  height: 1rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .max-h-\[80svh\] {
@@ -756,20 +796,32 @@ video {
   width: 0.75rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-auto {
   width: auto;
 }
 
-.max-w-full {
-  max-width: 100%;
+.w-full {
+  width: 100%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-\[90vw\] {
   max-width: 90vw;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-1 {
@@ -862,6 +914,10 @@ video {
 
 .gap-7 {
   gap: 1.75rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .overflow-hidden {
@@ -1180,12 +1236,30 @@ video {
   transition-duration: 150ms;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
 .duration-700 {
   transition-duration: 700ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .\[text-shadow\:0_1px_4px_rgba\(0\2c 0\2c 0\2c 0\.8\)\] {
@@ -1196,12 +1270,30 @@ video {
   display: none;
 }
 
+.hover\:scale-100:hover {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:opacity-50:hover {
   opacity: 0.5;
 }
 
 .hover\:opacity-60:hover {
   opacity: 0.6;
+}
+
+.active\:scale-95:active {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 768px) {
@@ -1217,6 +1309,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:inset-auto {
     inset: auto;
   }
@@ -1239,10 +1335,6 @@ video {
 
   .lg\:max-h-\[85svh\] {
     max-height: 85svh;
-  }
-
-  .lg\:max-w-\[90vw\] {
-    max-width: 90vw;
   }
 
   .lg\:flex-row {
@@ -1272,9 +1364,9 @@ video {
        object-position: 0% 18%;
   }
 
-  .lg\:object-\[0\%_38\%\] {
-    -o-object-position: 0% 38%;
-       object-position: 0% 38%;
+  .lg\:object-\[0\%_30\%\] {
+    -o-object-position: 0% 30%;
+       object-position: 0% 30%;
   }
 
   .lg\:object-\[0\%_40\%\] {
@@ -1340,21 +1432,6 @@ video {
   .lg\:object-\[48\%_0\%\] {
     -o-object-position: 48% 0%;
        object-position: 48% 0%;
-  }
-
-  .lg\:object-\[0\%_28\%\] {
-    -o-object-position: 0% 28%;
-       object-position: 0% 28%;
-  }
-
-  .lg\:object-\[0\%_30\%\] {
-    -o-object-position: 0% 30%;
-       object-position: 0% 30%;
-  }
-
-  .lg\:object-\[0\%_8\%\] {
-    -o-object-position: 0% 8%;
-       object-position: 0% 8%;
   }
 
   .lg\:text-\[1\.5rem\] {

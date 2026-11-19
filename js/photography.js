@@ -157,4 +157,28 @@ galerias.forEach(galeria => {
     }
     containerHorizontal.addEventListener("scroll", atualizarIndicadores);
     atualizarIndicadores();
-})
+
+/* ===================================================================== */
+//              Setas Navagação Galeria
+//======================================================================= 
+    const prev = galeria.querySelector(".prev");
+    const next = galeria.querySelector(".next");
+    
+    prev.addEventListener("click", () => {
+        containerHorizontal.scrollBy({
+            left: -containerHorizontal.clientWidth,
+            behavior: "smooth"
+        }) 
+    })
+
+    next.addEventListener("click", () => {
+        containerHorizontal.scrollBy({
+            left: containerHorizontal.clientWidth,
+            behavior: "smooth"
+        })
+    })
+});
+
+
+
+
